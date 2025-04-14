@@ -1,0 +1,5 @@
+<map id="Carcassonne::Riviere" name="Carcassonne::Riviere">
+<area shape="rect" id="node1" title="Represente une Riviere." alt="" coords="31,432,191,568"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Chemin.html" title="Represente le concept general de Chemin." alt="" coords="30,292,193,384"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1Environnement.html" title="Represente le concept general des elements pouvant se trouver sur une Tuile." alt="" coords="5,5,217,244"/>
+</map>

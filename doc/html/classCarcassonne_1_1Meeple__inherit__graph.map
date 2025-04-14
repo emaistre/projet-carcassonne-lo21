@@ -1,0 +1,6 @@
+<map id="Carcassonne::Meeple" name="Carcassonne::Meeple">
+<area shape="rect" id="node1" title="Represente un Meeple." alt="" coords="194,5,355,185"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Abbe.html" title="Represente un Abbe." alt="" coords="5,233,152,340"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1BasicMeeple.html" title="Represente un Meeple Basique." alt="" coords="177,233,373,340"/>
+<area shape="rect" id="node4" href="$classCarcassonne_1_1GdMeeple.html" title="Represente un Grand Meeple." alt="" coords="397,233,576,340"/>
+</map>

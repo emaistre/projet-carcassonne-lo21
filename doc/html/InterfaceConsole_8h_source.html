@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de InterfaceConsole.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">InterfaceConsole.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="InterfaceConsole_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __INTERFACECONSOLE_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __INTERFACECONSOLE_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Coordonnee_8h.html">Coordonnee.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Joueurs_8h.html">Joueurs.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Plateau_8h.html">Plateau.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Tuile_8h.html">Tuile.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CarcassonneException_8h.html">CarcassonneException.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceConsole.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1InterfaceConsole.html">InterfaceConsole</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::ostream&amp; streamOut; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        std::istream&amp; streamIn; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceConsole.html#a4c01e800ae289d777513d4159cafbcc3">   40</a></span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a4c01e800ae289d777513d4159cafbcc3">InterfaceConsole</a>(std::ostream&amp; st=std::cout, std::istream&amp; sti=std::cin) : streamOut(st), streamIn(sti) {};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a1af1c5fffb2a18d2ca6ec377ec58233f">~InterfaceConsole</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a8a0c02934b7f65a80cb0ae706df12cf6">afficheEmplacementsJouables</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Coordonnees.html">Coordonnees</a>&amp; c);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceConsole.html#a054794cf070ec2f802f33c30f2c2cdd3">   53</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a054794cf070ec2f802f33c30f2c2cdd3">afficheJoueur</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Joueur.html">Joueur</a>&amp; j) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            streamOut &lt;&lt; <span class="stringliteral">&quot;\n-- C&#39;est au tour du joueur &quot;</span> &lt;&lt; (j.<a class="code" href="classCarcassonne_1_1Joueur.html#a51b9915e79c9fcdf4a9951b876a96a6a">getNumero</a>() + 1) &lt;&lt; <span class="stringliteral">&quot; de jouer...\n&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceConsole.html#ad703a0a9cd433bdcc03d49f374bc9471">   61</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#ad703a0a9cd433bdcc03d49f374bc9471">afficheTuileCourante</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>&amp; t, <span class="keywordtype">size_t</span> nbTuileRest) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            streamOut &lt;&lt; <span class="stringliteral">&quot;Il reste &quot;</span> &lt;&lt; nbTuileRest &lt;&lt; <span class="stringliteral">&quot; Tuiles\n&quot;</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            streamOut &lt;&lt; <span class="stringliteral">&quot;Voici la tuile a jouer ce tour la :\n&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            t.<a class="code" href="classCarcassonne_1_1Tuile.html#ac7b533047a430134043f8b24cd6346f4">affiche</a>(streamOut);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceConsole.html#ad77d55f354247d4cf132cd1e55301e8c">   71</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#ad77d55f354247d4cf132cd1e55301e8c">affichePlateau</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Plateau.html">Plateau</a>&amp; p) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            streamOut &lt;&lt; <span class="stringliteral">&quot;-- Etat du plateau actuel --\n&quot;</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            p.<a class="code" href="classCarcassonne_1_1Plateau.html#a5eb6509753d37e338973ac52cd968bad">affiche</a>(streamOut);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceConsole.html#af38c34f250f8ec09d6712172c8ce4fe6">   78</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#af38c34f250f8ec09d6712172c8ce4fe6">afficheFinPartie</a>() {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            streamOut &lt;&lt; <span class="stringliteral">&quot;\n\n **** Fin de la partie ****\n\n&quot;</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceConsole.html#a17a64df1241e91024dfaf206c7171db8">   85</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a17a64df1241e91024dfaf206c7171db8">afficheGagnant</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> idxJoueur) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            streamOut &lt;&lt; <span class="stringliteral">&quot;\n*** Felication au joueur &quot;</span> &lt;&lt; (idxJoueur+1) &lt;&lt; <span class="stringliteral">&quot;!!! \n&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a8bc01a09ad73d1f4ade0afa0d042e743">afficheMessageErreur</a>(<span class="keyword">const</span> <a class="code" href="namespaceCarcassonne.html#a0a7eaaa2acf57e718ce1047c204921f2">InterfaceError</a>&amp; err, <span class="keyword">const</span> std::string&amp; msg = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#ae000bb4fa504e7875e88dcd3e840689a">afficheScore</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Joueurs.html">Joueurs</a>&amp; j);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        std::string <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a888c682d857cb47c648641bd2bfd548f">demanderAction</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a8714e77dcb97de1dc15199f44165a52f">demanderPointsAAttribuer</a>(<a class="code" href="classCarcassonne_1_1Joueurs.html">Joueurs</a>&amp; j);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classCarcassonne_1_1InterfaceConsole.html#a4685f8c52c704961eff451138f39b27f">demanderPoserMeeples</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Coordonnees.html">Coordonnees</a>&amp; c);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    };</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif // __INTERFACECONSOLE_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html_ac7b533047a430134043f8b24cd6346f4"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html#ac7b533047a430134043f8b24cd6346f4">Carcassonne::Tuile::affiche</a></div><div class="ttdeci">void affiche(ostream &amp;f, bool isinline=false) const</div><div class="ttdoc">Affiche la tuile dans un stream.</div><div class="ttdef"><b>Definition:</b> Tuile.cpp:131</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Joueur_html_a51b9915e79c9fcdf4a9951b876a96a6a"><div class="ttname"><a href="classCarcassonne_1_1Joueur.html#a51b9915e79c9fcdf4a9951b876a96a6a">Carcassonne::Joueur::getNumero</a></div><div class="ttdeci">int getNumero() const</div><div class="ttdoc">Donne le numero du joueur.</div><div class="ttdef"><b>Definition:</b> Joueur.h:56</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a1af1c5fffb2a18d2ca6ec377ec58233f"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a1af1c5fffb2a18d2ca6ec377ec58233f">Carcassonne::InterfaceConsole::~InterfaceConsole</a></div><div class="ttdeci">~InterfaceConsole()=default</div><div class="ttdoc">Destructeur de la classe.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a17a64df1241e91024dfaf206c7171db8"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a17a64df1241e91024dfaf206c7171db8">Carcassonne::InterfaceConsole::afficheGagnant</a></div><div class="ttdeci">void afficheGagnant(const int idxJoueur)</div><div class="ttdoc">Affiche le gagnant.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.h:85</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_af38c34f250f8ec09d6712172c8ce4fe6"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#af38c34f250f8ec09d6712172c8ce4fe6">Carcassonne::InterfaceConsole::afficheFinPartie</a></div><div class="ttdeci">void afficheFinPartie()</div><div class="ttdoc">Affiche un message signalant la fin de la partie.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.h:78</div></div>
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Tous les types de gestion de memoire.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html">Carcassonne::Plateau</a></div><div class="ttdoc">Plateau sur lequel les Tuiles sont disposees.</div><div class="ttdef"><b>Definition:</b> Plateau.h:31</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html">Carcassonne::Tuile</a></div><div class="ttdoc">Represente une Tuile.</div><div class="ttdef"><b>Definition:</b> Tuile.h:122</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a0a7eaaa2acf57e718ce1047c204921f2"><div class="ttname"><a href="namespaceCarcassonne.html#a0a7eaaa2acf57e718ce1047c204921f2">Carcassonne::InterfaceError</a></div><div class="ttdeci">InterfaceError</div><div class="ttdoc">Differents types d'erreur pour l'interface.</div><div class="ttdef"><b>Definition:</b> types.h:24</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a4685f8c52c704961eff451138f39b27f"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a4685f8c52c704961eff451138f39b27f">Carcassonne::InterfaceConsole::demanderPoserMeeples</a></div><div class="ttdeci">int demanderPoserMeeples(const Coordonnees &amp;c)</div><div class="ttdoc">Demande a l'utilisateur s'il souhaite poser un meeple sur la tuile qui vient d'être posee sur le plat...</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.cpp:73</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a054794cf070ec2f802f33c30f2c2cdd3"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a054794cf070ec2f802f33c30f2c2cdd3">Carcassonne::InterfaceConsole::afficheJoueur</a></div><div class="ttdeci">void afficheJoueur(const Joueur &amp;j)</div><div class="ttdoc">Affiche les donnees liees a un joueur.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.h:53</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html">Carcassonne::InterfaceConsole</a></div><div class="ttdoc">Interface console pour l'application.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.h:27</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a888c682d857cb47c648641bd2bfd548f"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a888c682d857cb47c648641bd2bfd548f">Carcassonne::InterfaceConsole::demanderAction</a></div><div class="ttdeci">std::string demanderAction()</div><div class="ttdoc">Demande a l'utilisateur l'action qu'il souhaite realiser.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.cpp:44</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Joueur_html"><div class="ttname"><a href="classCarcassonne_1_1Joueur.html">Carcassonne::Joueur</a></div><div class="ttdoc">Represente un joueur.</div><div class="ttdef"><b>Definition:</b> Joueur.h:26</div></div>
+<div class="ttc" id="aCarcassonneException_8h_html"><div class="ttname"><a href="CarcassonneException_8h.html">CarcassonneException.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a8a0c02934b7f65a80cb0ae706df12cf6"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a8a0c02934b7f65a80cb0ae706df12cf6">Carcassonne::InterfaceConsole::afficheEmplacementsJouables</a></div><div class="ttdeci">void afficheEmplacementsJouables(const Coordonnees &amp;c)</div><div class="ttdoc">Affiche a l'utilisateur les emplacements ou il peut poser une Tuile.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.cpp:5</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a8bc01a09ad73d1f4ade0afa0d042e743"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a8bc01a09ad73d1f4ade0afa0d042e743">Carcassonne::InterfaceConsole::afficheMessageErreur</a></div><div class="ttdeci">void afficheMessageErreur(const InterfaceError &amp;err, const std::string &amp;msg=&quot;&quot;)</div><div class="ttdoc">Affiche un message d'erreur.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.cpp:16</div></div>
+<div class="ttc" id="aPlateau_8h_html"><div class="ttname"><a href="Plateau_8h.html">Plateau.h</a></div></div>
+<div class="ttc" id="aCoordonnee_8h_html"><div class="ttname"><a href="Coordonnee_8h.html">Coordonnee.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html">Carcassonne::Coordonnees</a></div><div class="ttdoc">Regroupement de coordonnees.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:71</div></div>
+<div class="ttc" id="aJoueurs_8h_html"><div class="ttname"><a href="Joueurs_8h.html">Joueurs.h</a></div></div>
+<div class="ttc" id="aTuile_8h_html"><div class="ttname"><a href="Tuile_8h.html">Tuile.h</a></div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a8714e77dcb97de1dc15199f44165a52f"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a8714e77dcb97de1dc15199f44165a52f">Carcassonne::InterfaceConsole::demanderPointsAAttribuer</a></div><div class="ttdeci">void demanderPointsAAttribuer(Joueurs &amp;j)</div><div class="ttdoc">Demande a l'utilisateur s'il souhaite attribuer des points aux joueurs.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.cpp:54</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_ad77d55f354247d4cf132cd1e55301e8c"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#ad77d55f354247d4cf132cd1e55301e8c">Carcassonne::InterfaceConsole::affichePlateau</a></div><div class="ttdeci">void affichePlateau(const Plateau &amp;p)</div><div class="ttdoc">Affiche le plateau a l'utilisateur.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.h:71</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_a4c01e800ae289d777513d4159cafbcc3"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#a4c01e800ae289d777513d4159cafbcc3">Carcassonne::InterfaceConsole::InterfaceConsole</a></div><div class="ttdeci">InterfaceConsole(std::ostream &amp;st=std::cout, std::istream &amp;sti=std::cin)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.h:40</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_ad703a0a9cd433bdcc03d49f374bc9471"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#ad703a0a9cd433bdcc03d49f374bc9471">Carcassonne::InterfaceConsole::afficheTuileCourante</a></div><div class="ttdeci">void afficheTuileCourante(const Tuile &amp;t, size_t nbTuileRest)</div><div class="ttdoc">Affiche a l'utilisateur la Tuile courante.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.h:61</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_a5eb6509753d37e338973ac52cd968bad"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#a5eb6509753d37e338973ac52cd968bad">Carcassonne::Plateau::affiche</a></div><div class="ttdeci">void affiche(ostream &amp;f) const</div><div class="ttdoc">Affiche le plateau dans un stream.</div><div class="ttdef"><b>Definition:</b> Plateau.cpp:10</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Joueurs_html"><div class="ttname"><a href="classCarcassonne_1_1Joueurs.html">Carcassonne::Joueurs</a></div><div class="ttdoc">Gere la memoire des tous les Joueurs presents dans le jeu.</div><div class="ttdef"><b>Definition:</b> Joueurs.h:19</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceConsole_html_ae000bb4fa504e7875e88dcd3e840689a"><div class="ttname"><a href="classCarcassonne_1_1InterfaceConsole.html#ae000bb4fa504e7875e88dcd3e840689a">Carcassonne::InterfaceConsole::afficheScore</a></div><div class="ttdeci">void afficheScore(const Joueurs &amp;j)</div><div class="ttdoc">Affiche le score.</div><div class="ttdef"><b>Definition:</b> InterfaceConsole.cpp:26</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

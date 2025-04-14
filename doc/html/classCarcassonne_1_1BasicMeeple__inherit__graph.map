@@ -1,0 +1,4 @@
+<map id="Carcassonne::BasicMeeple" name="Carcassonne::BasicMeeple">
+<area shape="rect" id="node1" title="Represente un Meeple Basique." alt="" coords="5,233,201,340"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Meeple.html" title="Represente un Meeple." alt="" coords="23,5,184,185"/>
+</map>

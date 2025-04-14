@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de InterfaceActions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">InterfaceActions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="InterfaceActions_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef INTERFACEACTIONS_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define INTERFACEACTIONS_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Extensions_8h.html">Extensions.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="InterfacePersonnages_8h.html">InterfacePersonnages.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QLabel;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>QHBoxLayout;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>QVBoxLayout;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceActions.html">   29</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1InterfaceActions.html">InterfaceActions</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        Q_OBJECT</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        QVBoxLayout* layoutPrincipal;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        QHBoxLayout* layoutMeeples;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::vector&lt;InterfaceMeeple*&gt; meeples;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceActions.html#afcc59cfccdf3a6cf43ef568884912c09">InterfaceActions</a>(std::vector&lt;extensions&gt; ext, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceActions.html#a554c9a566d6e56ca70a1424d234d3ace">   46</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classCarcassonne_1_1InterfaceActions.html#a554c9a566d6e56ca70a1424d234d3ace">~InterfaceActions</a>() {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span> m : meeples) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keyword">delete</span> m;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceActions.html#a1905c2deb4c5358d5bc4eded354744e3">afficherNombreRestantMeeples</a>(std::vector&lt;int&gt; nbMeeplesParCat);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceActions.html#aac25535abcd90813c6f642a40d46a6d2">   59</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceActions.html#aac25535abcd90813c6f642a40d46a6d2">rendreActifPoseMeeple</a>() {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span> m : meeples) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                m-&gt;activeSelectionMeeple();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceActions.html#adc732611b679e72f13309246ae16c1e7">   67</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceActions.html#adc732611b679e72f13309246ae16c1e7">desactivePoseMeeple</a>() {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span> m : meeples) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                m-&gt;desactiveSelectionMeeple();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    signals:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceActions.html#af28350d76bcf59ed10d56b9195c0a2ed">sig_veutPoserMeeple</a>(<a class="code" href="classCarcassonne_1_1InterfaceMeeple.html">Carcassonne::InterfaceMeeple</a>* i);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> handleClickActionBtn(<a class="code" href="classCarcassonne_1_1InterfaceMeeple.html">Carcassonne::InterfaceMeeple</a>* i) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            emit <a class="code" href="classCarcassonne_1_1InterfaceActions.html#af28350d76bcf59ed10d56b9195c0a2ed">sig_veutPoserMeeple</a>(i);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif // INTERFACEACTIONS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aExtensions_8h_html"><div class="ttname"><a href="Extensions_8h.html">Extensions.h</a></div><div class="ttdoc">Defini les extensions du jeu.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceActions_html_a554c9a566d6e56ca70a1424d234d3ace"><div class="ttname"><a href="classCarcassonne_1_1InterfaceActions.html#a554c9a566d6e56ca70a1424d234d3ace">Carcassonne::InterfaceActions::~InterfaceActions</a></div><div class="ttdeci">virtual ~InterfaceActions()</div><div class="ttdoc">Destructeur de la classe.</div><div class="ttdef"><b>Definition:</b> InterfaceActions.h:46</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceActions_html_aac25535abcd90813c6f642a40d46a6d2"><div class="ttname"><a href="classCarcassonne_1_1InterfaceActions.html#aac25535abcd90813c6f642a40d46a6d2">Carcassonne::InterfaceActions::rendreActifPoseMeeple</a></div><div class="ttdeci">void rendreActifPoseMeeple()</div><div class="ttdoc">RendActif la pose de meeple.</div><div class="ttdef"><b>Definition:</b> InterfaceActions.h:59</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceActions_html"><div class="ttname"><a href="classCarcassonne_1_1InterfaceActions.html">Carcassonne::InterfaceActions</a></div><div class="ttdoc">Interface gerant les actions.</div><div class="ttdef"><b>Definition:</b> InterfaceActions.h:29</div></div>
+<div class="ttc" id="aInterfacePersonnages_8h_html"><div class="ttname"><a href="InterfacePersonnages_8h.html">InterfacePersonnages.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceActions_html_afcc59cfccdf3a6cf43ef568884912c09"><div class="ttname"><a href="classCarcassonne_1_1InterfaceActions.html#afcc59cfccdf3a6cf43ef568884912c09">Carcassonne::InterfaceActions::InterfaceActions</a></div><div class="ttdeci">InterfaceActions(std::vector&lt; extensions &gt; ext, QWidget *parent=nullptr)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> InterfaceActions.cpp:12</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceActions_html_adc732611b679e72f13309246ae16c1e7"><div class="ttname"><a href="classCarcassonne_1_1InterfaceActions.html#adc732611b679e72f13309246ae16c1e7">Carcassonne::InterfaceActions::desactivePoseMeeple</a></div><div class="ttdeci">void desactivePoseMeeple()</div><div class="ttdoc">Desactive la pose de meeple.</div><div class="ttdef"><b>Definition:</b> InterfaceActions.h:67</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceMeeple_html"><div class="ttname"><a href="classCarcassonne_1_1InterfaceMeeple.html">Carcassonne::InterfaceMeeple</a></div><div class="ttdoc">Interface d'un meeple.</div><div class="ttdef"><b>Definition:</b> InterfacePersonnages.h:23</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceActions_html_af28350d76bcf59ed10d56b9195c0a2ed"><div class="ttname"><a href="classCarcassonne_1_1InterfaceActions.html#af28350d76bcf59ed10d56b9195c0a2ed">Carcassonne::InterfaceActions::sig_veutPoserMeeple</a></div><div class="ttdeci">void sig_veutPoserMeeple(Carcassonne::InterfaceMeeple *i)</div><div class="ttdoc">Signal : indique que l'on veut poser un meeple.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceActions_html_a1905c2deb4c5358d5bc4eded354744e3"><div class="ttname"><a href="classCarcassonne_1_1InterfaceActions.html#a1905c2deb4c5358d5bc4eded354744e3">Carcassonne::InterfaceActions::afficherNombreRestantMeeples</a></div><div class="ttdeci">void afficherNombreRestantMeeples(std::vector&lt; int &gt; nbMeeplesParCat)</div><div class="ttdoc">Affiche le nombre restant de meeples.</div><div class="ttdef"><b>Definition:</b> InterfaceActions.cpp:31</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="Carcassonne::PlateauException" name="Carcassonne::PlateauException">
+<area shape="rect" id="node1" title="Exceptions declenchees par le Plateau." alt="" coords="5,300,232,377"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1CarcassonneException.html" title="Regroupe toutes les exceptions du jeu." alt="" coords="16,131,221,252"/>
+<area shape="rect" id="node3" title=" " alt="" coords="75,5,162,83"/>
+</map>

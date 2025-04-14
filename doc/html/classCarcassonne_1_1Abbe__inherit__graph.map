@@ -1,0 +1,4 @@
+<map id="Carcassonne::Abbe" name="Carcassonne::Abbe">
+<area shape="rect" id="node1" title="Represente un Abbe." alt="" coords="13,233,159,340"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Meeple.html" title="Represente un Meeple." alt="" coords="5,5,167,185"/>
+</map>

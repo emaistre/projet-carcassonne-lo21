@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$classCarcassonne_1_1Jeu.html" title="Represente une partie generale de Carcassonne." alt="" coords="5,31,139,57"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1JeuConsole.html" title="Represente une partie de Carcassonne en Console." alt="" coords="194,5,379,32"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1JeuGraphique.html" title=" " alt="" coords="187,56,387,83"/>
+</map>

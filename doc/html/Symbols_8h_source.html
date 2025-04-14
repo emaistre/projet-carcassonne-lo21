@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de Symbols.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Symbols.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Symbols_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef __SYMBOLS_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define __SYMBOLS_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#af431791535d616c1b08c51aad19e4443">   19</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="namespaceCarcassonne.html#af431791535d616c1b08c51aad19e4443">idTypesVilles</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        CLASSIQUE = 0,  <span class="comment">/*&lt;! Ville Classique */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        AVEC_BOUCLIER = 1,  <span class="comment">/*&lt;! Ville avec Bouclier */</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        AVEC_CATHEDRALE = 2 <span class="comment">/*&lt;! Ville avec Cathedrale */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//Cas Particuliers</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a14203dc68dcb57e87dd5737666bb6f13">   26</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a14203dc68dcb57e87dd5737666bb6f13">C_COIN</a> = <span class="charliteral">&#39;@&#39;</span>; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a4317255d2111deabb571081accf9ce8c">   27</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a4317255d2111deabb571081accf9ce8c">C_BOUCLIER</a> = <span class="charliteral">&#39;B&#39;</span>; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//Surfaces</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a9e2a697382e86b2b80b326f455ec8d90">   30</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a9e2a697382e86b2b80b326f455ec8d90">C_PRES</a> = <span class="charliteral">&#39;#&#39;</span>; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#afe834faf5aadee80a69694edd317640a">   31</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#afe834faf5aadee80a69694edd317640a">C_VILLE</a> = <span class="charliteral">&#39;V&#39;</span>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//Batiments</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a7871d6b6d6c29bd63288c12cb30d8fe7">   34</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a7871d6b6d6c29bd63288c12cb30d8fe7">C_ABBAYE</a> = <span class="charliteral">&#39;A&#39;</span>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a771bb0152ed647bf8b201be5d9b8f131">   35</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a771bb0152ed647bf8b201be5d9b8f131">C_JARDIN</a> = <span class="charliteral">&#39;J&#39;</span>; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a52cadbf1676ed0e4933179eda4ff9f55">   36</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a52cadbf1676ed0e4933179eda4ff9f55">C_AUBERGE</a> = <span class="charliteral">&#39;L&#39;</span>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a20183f3e5f71b6d418591df62c2ada4b">   37</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a20183f3e5f71b6d418591df62c2ada4b">C_CATHEDRALE</a> = <span class="charliteral">&#39;T&#39;</span>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//Chemins</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a039f787908ea4f45dcd7bf11b019162f">   40</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a039f787908ea4f45dcd7bf11b019162f">C_ROUTE</a> = <span class="charliteral">&#39;C&#39;</span>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespaceCarcassonne.html#a7bc7a389996cc9f9763f665e1a4df289">   41</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="namespaceCarcassonne.html#a7bc7a389996cc9f9763f665e1a4df289">C_RIVIERE</a> = <span class="charliteral">&#39;R&#39;</span>; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceCarcassonne_html_a7bc7a389996cc9f9763f665e1a4df289"><div class="ttname"><a href="namespaceCarcassonne.html#a7bc7a389996cc9f9763f665e1a4df289">Carcassonne::C_RIVIERE</a></div><div class="ttdeci">const char C_RIVIERE</div><div class="ttdef"><b>Definition:</b> Symbols.h:41</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a9e2a697382e86b2b80b326f455ec8d90"><div class="ttname"><a href="namespaceCarcassonne.html#a9e2a697382e86b2b80b326f455ec8d90">Carcassonne::C_PRES</a></div><div class="ttdeci">const char C_PRES</div><div class="ttdef"><b>Definition:</b> Symbols.h:30</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_af431791535d616c1b08c51aad19e4443"><div class="ttname"><a href="namespaceCarcassonne.html#af431791535d616c1b08c51aad19e4443">Carcassonne::idTypesVilles</a></div><div class="ttdeci">idTypesVilles</div><div class="ttdoc">Differents identifiants pour representer differents types de villes.</div><div class="ttdef"><b>Definition:</b> Symbols.h:19</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a039f787908ea4f45dcd7bf11b019162f"><div class="ttname"><a href="namespaceCarcassonne.html#a039f787908ea4f45dcd7bf11b019162f">Carcassonne::C_ROUTE</a></div><div class="ttdeci">const char C_ROUTE</div><div class="ttdef"><b>Definition:</b> Symbols.h:40</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a52cadbf1676ed0e4933179eda4ff9f55"><div class="ttname"><a href="namespaceCarcassonne.html#a52cadbf1676ed0e4933179eda4ff9f55">Carcassonne::C_AUBERGE</a></div><div class="ttdeci">const char C_AUBERGE</div><div class="ttdef"><b>Definition:</b> Symbols.h:36</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a4317255d2111deabb571081accf9ce8c"><div class="ttname"><a href="namespaceCarcassonne.html#a4317255d2111deabb571081accf9ce8c">Carcassonne::C_BOUCLIER</a></div><div class="ttdeci">const char C_BOUCLIER</div><div class="ttdef"><b>Definition:</b> Symbols.h:27</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a771bb0152ed647bf8b201be5d9b8f131"><div class="ttname"><a href="namespaceCarcassonne.html#a771bb0152ed647bf8b201be5d9b8f131">Carcassonne::C_JARDIN</a></div><div class="ttdeci">const char C_JARDIN</div><div class="ttdef"><b>Definition:</b> Symbols.h:35</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a7871d6b6d6c29bd63288c12cb30d8fe7"><div class="ttname"><a href="namespaceCarcassonne.html#a7871d6b6d6c29bd63288c12cb30d8fe7">Carcassonne::C_ABBAYE</a></div><div class="ttdeci">const char C_ABBAYE</div><div class="ttdef"><b>Definition:</b> Symbols.h:34</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a14203dc68dcb57e87dd5737666bb6f13"><div class="ttname"><a href="namespaceCarcassonne.html#a14203dc68dcb57e87dd5737666bb6f13">Carcassonne::C_COIN</a></div><div class="ttdeci">const char C_COIN</div><div class="ttdef"><b>Definition:</b> Symbols.h:26</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a20183f3e5f71b6d418591df62c2ada4b"><div class="ttname"><a href="namespaceCarcassonne.html#a20183f3e5f71b6d418591df62c2ada4b">Carcassonne::C_CATHEDRALE</a></div><div class="ttdeci">const char C_CATHEDRALE</div><div class="ttdef"><b>Definition:</b> Symbols.h:37</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_afe834faf5aadee80a69694edd317640a"><div class="ttname"><a href="namespaceCarcassonne.html#afe834faf5aadee80a69694edd317640a">Carcassonne::C_VILLE</a></div><div class="ttdeci">const char C_VILLE</div><div class="ttdef"><b>Definition:</b> Symbols.h:31</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

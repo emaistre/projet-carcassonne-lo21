@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de Batiment.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Batiment.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Batiment_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __BATIMENT_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __BATIMENT_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define UNUSED(x) (void)x</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Symbols_8h.html">Symbols.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Environnement_8h.html">Environnement.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Batiment.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    public :</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Batiment.html#a581d026fbcb993e034bdb1660448f509">   32</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Batiment.html#a581d026fbcb993e034bdb1660448f509">Batiment</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile) : <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>(premiereTuile) {}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ~<a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Batiment.html#a6207285784f8a338ad869176667ddbcd">   44</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a>* <a class="code" href="classCarcassonne_1_1Batiment.html#a6207285784f8a338ad869176667ddbcd">connect</a>(<a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* env)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            UNUSED(env);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Batiment.html#a9342ac7197049b312dbd38821a2991eb">   55</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Batiment.html#a9342ac7197049b312dbd38821a2991eb">peutEtreAdjacentA</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* envAdj)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            UNUSED(envAdj);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    };</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Abbaye.html">   65</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Abbaye.html">Abbaye</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a> {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    private :</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    public :</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Abbaye.html#aebdd155c4ea115c3b429a2c52c32be70">   72</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Abbaye.html#aebdd155c4ea115c3b429a2c52c32be70">Abbaye</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile):<a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a>(premiereTuile){}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        ~<a class="code" href="classCarcassonne_1_1Abbaye.html">Abbaye</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Abbaye.html#a09fb8c8f05a4a5093ffdd215790c8f0e">   80</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>&amp; <a class="code" href="classCarcassonne_1_1Abbaye.html#a09fb8c8f05a4a5093ffdd215790c8f0e">toChar</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespaceCarcassonne.html#a7871d6b6d6c29bd63288c12cb30d8fe7">C_ABBAYE</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Jardin.html">   89</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Jardin.html">Jardin</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    private :</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    public :</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Jardin.html#aabc6b1e2e8bbf80ccd29c14b0a41b0e1">   97</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Jardin.html#aabc6b1e2e8bbf80ccd29c14b0a41b0e1">Jardin</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile):<a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a>(premiereTuile){}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        ~<a class="code" href="classCarcassonne_1_1Jardin.html">Jardin</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Jardin.html#a196ba2cd192a1baa146e1b3031bc8aed">  105</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>&amp; <a class="code" href="classCarcassonne_1_1Jardin.html#a196ba2cd192a1baa146e1b3031bc8aed">toChar</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespaceCarcassonne.html#a771bb0152ed647bf8b201be5d9b8f131">C_JARDIN</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    };</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Auberge.html">  114</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Auberge.html">Auberge</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a> {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    private :</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    public :</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Auberge.html#acaa1061c720c958f8ece08c5be426e9d">  122</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Auberge.html#acaa1061c720c958f8ece08c5be426e9d">Auberge</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile):<a class="code" href="classCarcassonne_1_1Batiment.html">Batiment</a>(premiereTuile){}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        ~<a class="code" href="classCarcassonne_1_1Auberge.html">Auberge</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Auberge.html#a0733656a06f66923dd3aeed410314ff0">  130</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>&amp; <a class="code" href="classCarcassonne_1_1Auberge.html#a0733656a06f66923dd3aeed410314ff0">toChar</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespaceCarcassonne.html#a52cadbf1676ed0e4933179eda4ff9f55">C_AUBERGE</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    };</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCarcassonne_1_1Abbaye_html_a09fb8c8f05a4a5093ffdd215790c8f0e"><div class="ttname"><a href="classCarcassonne_1_1Abbaye.html#a09fb8c8f05a4a5093ffdd215790c8f0e">Carcassonne::Abbaye::toChar</a></div><div class="ttdeci">const char &amp; toChar() const override</div><div class="ttdoc">Donne le caractere representant une Abbaye.</div><div class="ttdef"><b>Definition:</b> Batiment.h:80</div></div>
+<div class="ttc" id="aSymbols_8h_html"><div class="ttname"><a href="Symbols_8h.html">Symbols.h</a></div><div class="ttdoc">Definis dans le fichier csv representant une les differents elements de decors presents sur une tuile...</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html">Carcassonne::Tuile</a></div><div class="ttdoc">Represente une Tuile.</div><div class="ttdef"><b>Definition:</b> Tuile.h:122</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a></div><div class="ttdoc">Represente le concept general des elements pouvant se trouver sur une Tuile.</div><div class="ttdef"><b>Definition:</b> Environnement.h:25</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Abbaye_html_aebdd155c4ea115c3b429a2c52c32be70"><div class="ttname"><a href="classCarcassonne_1_1Abbaye.html#aebdd155c4ea115c3b429a2c52c32be70">Carcassonne::Abbaye::Abbaye</a></div><div class="ttdeci">Abbaye(Tuile *premiereTuile)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Batiment.h:72</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Jardin_html"><div class="ttname"><a href="classCarcassonne_1_1Jardin.html">Carcassonne::Jardin</a></div><div class="ttdoc">Represente un Jardin.</div><div class="ttdef"><b>Definition:</b> Batiment.h:89</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Batiment_html_a581d026fbcb993e034bdb1660448f509"><div class="ttname"><a href="classCarcassonne_1_1Batiment.html#a581d026fbcb993e034bdb1660448f509">Carcassonne::Batiment::Batiment</a></div><div class="ttdeci">Batiment(Tuile *premiereTuile)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Batiment.h:32</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Abbaye_html"><div class="ttname"><a href="classCarcassonne_1_1Abbaye.html">Carcassonne::Abbaye</a></div><div class="ttdoc">Represente une Abbaye.</div><div class="ttdef"><b>Definition:</b> Batiment.h:65</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a52cadbf1676ed0e4933179eda4ff9f55"><div class="ttname"><a href="namespaceCarcassonne.html#a52cadbf1676ed0e4933179eda4ff9f55">Carcassonne::C_AUBERGE</a></div><div class="ttdeci">const char C_AUBERGE</div><div class="ttdef"><b>Definition:</b> Symbols.h:36</div></div>
+<div class="ttc" id="aEnvironnement_8h_html"><div class="ttname"><a href="Environnement_8h.html">Environnement.h</a></div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a771bb0152ed647bf8b201be5d9b8f131"><div class="ttname"><a href="namespaceCarcassonne.html#a771bb0152ed647bf8b201be5d9b8f131">Carcassonne::C_JARDIN</a></div><div class="ttdeci">const char C_JARDIN</div><div class="ttdef"><b>Definition:</b> Symbols.h:35</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Batiment_html"><div class="ttname"><a href="classCarcassonne_1_1Batiment.html">Carcassonne::Batiment</a></div><div class="ttdoc">Represente le concept general de Batiment.</div><div class="ttdef"><b>Definition:</b> Batiment.h:26</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Batiment_html_a9342ac7197049b312dbd38821a2991eb"><div class="ttname"><a href="classCarcassonne_1_1Batiment.html#a9342ac7197049b312dbd38821a2991eb">Carcassonne::Batiment::peutEtreAdjacentA</a></div><div class="ttdeci">bool peutEtreAdjacentA(const Environnement *envAdj) override</div><div class="ttdoc">Indique si le batiment courant peut etre adjacent a un autre.</div><div class="ttdef"><b>Definition:</b> Batiment.h:55</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Auberge_html_acaa1061c720c958f8ece08c5be426e9d"><div class="ttname"><a href="classCarcassonne_1_1Auberge.html#acaa1061c720c958f8ece08c5be426e9d">Carcassonne::Auberge::Auberge</a></div><div class="ttdeci">Auberge(Tuile *premiereTuile)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Batiment.h:122</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Batiment_html_a6207285784f8a338ad869176667ddbcd"><div class="ttname"><a href="classCarcassonne_1_1Batiment.html#a6207285784f8a338ad869176667ddbcd">Carcassonne::Batiment::connect</a></div><div class="ttdeci">Batiment * connect(Environnement *env) override</div><div class="ttdoc">Connecte le batiment courant a un autre.</div><div class="ttdef"><b>Definition:</b> Batiment.h:44</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a7871d6b6d6c29bd63288c12cb30d8fe7"><div class="ttname"><a href="namespaceCarcassonne.html#a7871d6b6d6c29bd63288c12cb30d8fe7">Carcassonne::C_ABBAYE</a></div><div class="ttdeci">const char C_ABBAYE</div><div class="ttdef"><b>Definition:</b> Symbols.h:34</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Jardin_html_a196ba2cd192a1baa146e1b3031bc8aed"><div class="ttname"><a href="classCarcassonne_1_1Jardin.html#a196ba2cd192a1baa146e1b3031bc8aed">Carcassonne::Jardin::toChar</a></div><div class="ttdeci">const char &amp; toChar() const override</div><div class="ttdoc">Donne le caractere representant un Jardin.</div><div class="ttdef"><b>Definition:</b> Batiment.h:105</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Jardin_html_aabc6b1e2e8bbf80ccd29c14b0a41b0e1"><div class="ttname"><a href="classCarcassonne_1_1Jardin.html#aabc6b1e2e8bbf80ccd29c14b0a41b0e1">Carcassonne::Jardin::Jardin</a></div><div class="ttdeci">Jardin(Tuile *premiereTuile)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Batiment.h:97</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Auberge_html_a0733656a06f66923dd3aeed410314ff0"><div class="ttname"><a href="classCarcassonne_1_1Auberge.html#a0733656a06f66923dd3aeed410314ff0">Carcassonne::Auberge::toChar</a></div><div class="ttdeci">const char &amp; toChar() const override</div><div class="ttdoc">Donne le caractere representant une Auberge.</div><div class="ttdef"><b>Definition:</b> Batiment.h:130</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Auberge_html"><div class="ttname"><a href="classCarcassonne_1_1Auberge.html">Carcassonne::Auberge</a></div><div class="ttdoc">Represente une Auberge.</div><div class="ttdef"><b>Definition:</b> Batiment.h:114</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

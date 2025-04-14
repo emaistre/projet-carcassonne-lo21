@@ -1,0 +1,4 @@
+<map id="Carcassonne::EnvironnementVide" name="Carcassonne::EnvironnementVide">
+<area shape="rect" id="node1" title=" " alt="" coords="5,292,247,428"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Environnement.html" title="Represente le concept general des elements pouvant se trouver sur une Tuile." alt="" coords="20,5,232,244"/>
+</map>

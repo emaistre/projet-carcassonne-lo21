@@ -1,0 +1,5 @@
+<map id="Carcassonne::Pre" name="Carcassonne::Pre">
+<area shape="rect" id="node1" title="Represente un Pre." alt="" coords="11,432,211,583"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Surface.html" title="Represente le concept general de Surface." alt="" coords="30,292,193,384"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1Environnement.html" title="Represente le concept general des elements pouvant se trouver sur une Tuile." alt="" coords="5,5,217,244"/>
+</map>

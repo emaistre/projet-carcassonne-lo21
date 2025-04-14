@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de Plateau.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Plateau.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Plateau_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __PLATEAU_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __PLATEAU_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Extensions_8h.html">Extensions.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Personnages_8h.html">Personnages.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Coordonnee_8h.html">Coordonnee.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Pioche_8h.html">Pioche.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CarcassonneException_8h.html">CarcassonneException.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">class </span>JeuConsole;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html">   31</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Plateau.html">Plateau</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#a9f75019a697438fc6a94fa3be510516a">   35</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> NB_LIGNES_MAX = 30; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#a94e68872742f27ae52aab462a7d4d4c4">   36</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> NB_COLONNES_MAX = 30; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classCarcassonne_1_1Pioche.html">Pioche</a> pioche; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* tuileCourante = <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        array&lt;array&lt;const Tuile*, NB_COLONNES_MAX&gt;, NB_LIGNES_MAX&gt; plateau; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees.html">Coordonnees</a> emplacementsVidesJouables; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        std::vector&lt;extensions&gt; ext; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1JeuConsole.html">JeuConsole</a>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#a13991440629f4d19c778519c746a52f5">   60</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Plateau.html#a13991440629f4d19c778519c746a52f5">Plateau</a>(std::vector&lt;extensions&gt; extensionListe) : pioche(extensionListe), ext(extensionListe) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            initPlateau();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            nextTuile();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            poserTuile(<a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a>(NB_COLONNES_MAX / 2, NB_LIGNES_MAX / 2));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            nextTuile();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ~<a class="code" href="classCarcassonne_1_1Plateau.html">Plateau</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#a2996ed208828c64c79905b7976b7da06">   74</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Pioche.html">Pioche</a>&amp; <a class="code" href="classCarcassonne_1_1Plateau.html#a2996ed208828c64c79905b7976b7da06">getPioche</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> pioche;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#ab8c020e237b4e3e1b63807abe73f4b36">   82</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* <a class="code" href="classCarcassonne_1_1Plateau.html#ab8c020e237b4e3e1b63807abe73f4b36">getTuile</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> tuileCourante;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#af277b452f95357d3dc5bf588d79b1ebe">   87</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Plateau.html#af277b452f95357d3dc5bf588d79b1ebe">nextTuile</a>() {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            tuileCourante = pioche.<a class="code" href="classCarcassonne_1_1Pioche.html#a7c16feafe4f6e86ef35db6bca36c9f81">piocher</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#ae7b57f4faccff62036521e6a1a48832f">   92</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Plateau.html#ae7b57f4faccff62036521e6a1a48832f">tournerTuileDroite</a>() {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span>(tuileCourante == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classCarcassonne_1_1TuileException.html">TuileException</a>(<span class="stringliteral">&quot;Ne peut pas faire tourner une tuile vide !!&quot;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            tuileCourante-&gt;<a class="code" href="classCarcassonne_1_1Tuile.html#aa24efa7d86451aac8be72e1b2d1597d9">rotation</a>(<a class="code" href="namespaceCarcassonne.html#abccddc0c09403cc2edac982dea7412a4a3c8c479b3333a309f2ea15978b4e4d31">directionRotation::droite</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#a2611f42560f4e797f8215f588603f4e4">  100</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Plateau.html#a2611f42560f4e797f8215f588603f4e4">tournerTuileGauche</a>() {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">if</span>(tuileCourante == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classCarcassonne_1_1TuileException.html">TuileException</a>(<span class="stringliteral">&quot;Ne peut pas faire tourner une tuile vide !!&quot;</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            tuileCourante-&gt;<a class="code" href="classCarcassonne_1_1Tuile.html#aa24efa7d86451aac8be72e1b2d1597d9">rotation</a>(<a class="code" href="namespaceCarcassonne.html#abccddc0c09403cc2edac982dea7412a4a7831b614c93d74439067cca61fb2bf29">directionRotation::gauche</a>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#a70bae9ffbf19b534118cf2a5a40b6b87">  112</a></span>&#160;        <span class="keyword">const</span> array&lt;const Tuile*, NB_COLONNES_MAX&gt;&amp; <a class="code" href="classCarcassonne_1_1Plateau.html#a70bae9ffbf19b534118cf2a5a40b6b87">getLigneDeTuiles</a>(<span class="keywordtype">size_t</span> y)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span>(y &gt;= NB_LIGNES_MAX) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classCarcassonne_1_1PlateauException.html">PlateauException</a>(<span class="stringliteral">&quot;Erreur, tente de recuperer une ligne qui est hors du plateau !&quot;</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">return</span> plateau[y];</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#aa2531bc7ee5156990613ad95909785b5">  122</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Plateau.html#aa2531bc7ee5156990613ad95909785b5">remettreTuile</a>() {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            tuileCourante = pioche.<a class="code" href="classCarcassonne_1_1Pioche.html#a37a58fab89a88f0c21df84c00951a4cb">repiocher</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Plateau.html#aabed5193220f41f3512f22ab67be352a">  130</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Plateau.html#aabed5193220f41f3512f22ab67be352a">peutJouerDesTuiles</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> tuileCourante != <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">void</span> affiche(ostream&amp; f) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees.html">Coordonnees</a> getEmplacementsOuPeutPoser();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees.html">Coordonnees</a> getEmplacementOuPeutPoserMeeple(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a>&amp; coordTuile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* poserTuile(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a>&amp; c);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>* poserMeeple(<a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>* m, <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* env);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* p_getTuile()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">return</span> tuileCourante;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordtype">void</span> getEmplacementsVidesAutourDeTuile(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">void</span> initPlateau() {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> idxLigne = 0; idxLigne &lt; NB_LIGNES_MAX; idxLigne++) {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> idxCol = 0; idxCol &lt; NB_COLONNES_MAX; idxCol++) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                    plateau[idxLigne][idxCol] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    };</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_aa2531bc7ee5156990613ad95909785b5"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#aa2531bc7ee5156990613ad95909785b5">Carcassonne::Plateau::remettreTuile</a></div><div class="ttdeci">void remettreTuile()</div><div class="ttdoc">Remet la Tuile courante dans la pioche.</div><div class="ttdef"><b>Definition:</b> Plateau.h:122</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1PlateauException_html"><div class="ttname"><a href="classCarcassonne_1_1PlateauException.html">Carcassonne::PlateauException</a></div><div class="ttdoc">Exceptions declenchees par le Plateau.</div><div class="ttdef"><b>Definition:</b> CarcassonneException.h:91</div></div>
+<div class="ttc" id="aExtensions_8h_html"><div class="ttname"><a href="Extensions_8h.html">Extensions.h</a></div><div class="ttdoc">Defini les extensions du jeu.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Pioche_html"><div class="ttname"><a href="classCarcassonne_1_1Pioche.html">Carcassonne::Pioche</a></div><div class="ttdoc">Represente la pioche.</div><div class="ttdef"><b>Definition:</b> Pioche.h:27</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_abccddc0c09403cc2edac982dea7412a4a3c8c479b3333a309f2ea15978b4e4d31"><div class="ttname"><a href="namespaceCarcassonne.html#abccddc0c09403cc2edac982dea7412a4a3c8c479b3333a309f2ea15978b4e4d31">Carcassonne::directionRotation::droite</a></div><div class="ttdeci">@ droite</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html">Carcassonne::Plateau</a></div><div class="ttdoc">Plateau sur lequel les Tuiles sont disposees.</div><div class="ttdef"><b>Definition:</b> Plateau.h:31</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html">Carcassonne::Tuile</a></div><div class="ttdoc">Represente une Tuile.</div><div class="ttdef"><b>Definition:</b> Tuile.h:122</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1TuileException_html"><div class="ttname"><a href="classCarcassonne_1_1TuileException.html">Carcassonne::TuileException</a></div><div class="ttdoc">Exceptions declenchees par les Tuiles.</div><div class="ttdef"><b>Definition:</b> CarcassonneException.h:79</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html">Carcassonne::Coordonnee</a></div><div class="ttdoc">Represente une coordonnee sur le plateau en 2D.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:21</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a></div><div class="ttdoc">Represente le concept general des elements pouvant se trouver sur une Tuile.</div><div class="ttdef"><b>Definition:</b> Environnement.h:25</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_a13991440629f4d19c778519c746a52f5"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#a13991440629f4d19c778519c746a52f5">Carcassonne::Plateau::Plateau</a></div><div class="ttdeci">Plateau(std::vector&lt; extensions &gt; extensionListe)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Plateau.h:60</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_a2996ed208828c64c79905b7976b7da06"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#a2996ed208828c64c79905b7976b7da06">Carcassonne::Plateau::getPioche</a></div><div class="ttdeci">const Pioche &amp; getPioche() const</div><div class="ttdoc">Recupere la pioche.</div><div class="ttdef"><b>Definition:</b> Plateau.h:74</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_a70bae9ffbf19b534118cf2a5a40b6b87"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#a70bae9ffbf19b534118cf2a5a40b6b87">Carcassonne::Plateau::getLigneDeTuiles</a></div><div class="ttdeci">const array&lt; const Tuile *, NB_COLONNES_MAX &gt; &amp; getLigneDeTuiles(size_t y) const</div><div class="ttdoc">Recupere une ligne entiere du plateau.</div><div class="ttdef"><b>Definition:</b> Plateau.h:112</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html">Carcassonne::Meeple</a></div><div class="ttdoc">Represente un Meeple.</div><div class="ttdef"><b>Definition:</b> Personnages.h:22</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_ae7b57f4faccff62036521e6a1a48832f"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#ae7b57f4faccff62036521e6a1a48832f">Carcassonne::Plateau::tournerTuileDroite</a></div><div class="ttdeci">void tournerTuileDroite()</div><div class="ttdoc">Tourne la tuile courante a droite.</div><div class="ttdef"><b>Definition:</b> Plateau.h:92</div></div>
+<div class="ttc" id="aPioche_8h_html"><div class="ttname"><a href="Pioche_8h.html">Pioche.h</a></div></div>
+<div class="ttc" id="aCarcassonneException_8h_html"><div class="ttname"><a href="CarcassonneException_8h.html">CarcassonneException.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_a2611f42560f4e797f8215f588603f4e4"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#a2611f42560f4e797f8215f588603f4e4">Carcassonne::Plateau::tournerTuileGauche</a></div><div class="ttdeci">void tournerTuileGauche()</div><div class="ttdoc">Tourne la tuile courante a gauche.</div><div class="ttdef"><b>Definition:</b> Plateau.h:100</div></div>
+<div class="ttc" id="aPersonnages_8h_html"><div class="ttname"><a href="Personnages_8h.html">Personnages.h</a></div></div>
+<div class="ttc" id="aCoordonnee_8h_html"><div class="ttname"><a href="Coordonnee_8h.html">Coordonnee.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html_aa24efa7d86451aac8be72e1b2d1597d9"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html#aa24efa7d86451aac8be72e1b2d1597d9">Carcassonne::Tuile::rotation</a></div><div class="ttdeci">Tuile * rotation(const directionRotation &amp;dir)</div><div class="ttdoc">Fait une rotation de la Tuile.</div><div class="ttdef"><b>Definition:</b> Tuile.cpp:96</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html">Carcassonne::Coordonnees</a></div><div class="ttdoc">Regroupement de coordonnees.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:71</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_aabed5193220f41f3512f22ab67be352a"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#aabed5193220f41f3512f22ab67be352a">Carcassonne::Plateau::peutJouerDesTuiles</a></div><div class="ttdeci">bool peutJouerDesTuiles() const</div><div class="ttdoc">Indique s'il est possible de jouer (s'il reste des Tuiles dans la pioche)</div><div class="ttdef"><b>Definition:</b> Plateau.h:130</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Pioche_html_a37a58fab89a88f0c21df84c00951a4cb"><div class="ttname"><a href="classCarcassonne_1_1Pioche.html#a37a58fab89a88f0c21df84c00951a4cb">Carcassonne::Pioche::repiocher</a></div><div class="ttdeci">Tuile * repiocher()</div><div class="ttdoc">Repioche une Tuile.</div><div class="ttdef"><b>Definition:</b> Pioche.h:87</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_af277b452f95357d3dc5bf588d79b1ebe"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#af277b452f95357d3dc5bf588d79b1ebe">Carcassonne::Plateau::nextTuile</a></div><div class="ttdeci">void nextTuile()</div><div class="ttdoc">Passe a la tuile suivante.</div><div class="ttdef"><b>Definition:</b> Plateau.h:87</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_abccddc0c09403cc2edac982dea7412a4a7831b614c93d74439067cca61fb2bf29"><div class="ttname"><a href="namespaceCarcassonne.html#abccddc0c09403cc2edac982dea7412a4a7831b614c93d74439067cca61fb2bf29">Carcassonne::directionRotation::gauche</a></div><div class="ttdeci">@ gauche</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1JeuConsole_html"><div class="ttname"><a href="classCarcassonne_1_1JeuConsole.html">Carcassonne::JeuConsole</a></div><div class="ttdoc">Represente une partie de Carcassonne en Console.</div><div class="ttdef"><b>Definition:</b> Jeu.h:215</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Plateau_html_ab8c020e237b4e3e1b63807abe73f4b36"><div class="ttname"><a href="classCarcassonne_1_1Plateau.html#ab8c020e237b4e3e1b63807abe73f4b36">Carcassonne::Plateau::getTuile</a></div><div class="ttdeci">const Tuile * getTuile() const</div><div class="ttdoc">Recupere la tuile a poser.</div><div class="ttdef"><b>Definition:</b> Plateau.h:82</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Pioche_html_a7c16feafe4f6e86ef35db6bca36c9f81"><div class="ttname"><a href="classCarcassonne_1_1Pioche.html#a7c16feafe4f6e86ef35db6bca36c9f81">Carcassonne::Pioche::piocher</a></div><div class="ttdeci">Tuile * piocher()</div><div class="ttdoc">Pioche une Tuile.</div><div class="ttdef"><b>Definition:</b> Pioche.cpp:61</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

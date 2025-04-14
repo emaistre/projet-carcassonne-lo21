@@ -1,0 +1,14 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$classCarcassonne_1_1Environnement.html" title="Represente le concept general des elements pouvant se trouver sur une Tuile." alt="" coords="5,183,217,209"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Batiment.html" title="Represente le concept general de Batiment." alt="" coords="299,81,473,108"/>
+<area shape="rect" id="node6" href="$classCarcassonne_1_1Chemin.html" title="Represente le concept general de Chemin." alt="" coords="305,157,467,184"/>
+<area shape="rect" id="node9" href="$classCarcassonne_1_1EnvironnementVide.html" title=" " alt="" coords="265,208,507,235"/>
+<area shape="rect" id="node10" href="$classCarcassonne_1_1Surface.html" title="Represente le concept general de Surface." alt="" coords="305,259,467,285"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1Abbaye.html" title="Represente une Abbaye." alt="" coords="557,5,719,32"/>
+<area shape="rect" id="node4" href="$classCarcassonne_1_1Auberge.html" title="Represente une Auberge." alt="" coords="555,56,721,83"/>
+<area shape="rect" id="node5" href="$classCarcassonne_1_1Jardin.html" title="Represente un Jardin." alt="" coords="563,107,713,133"/>
+<area shape="rect" id="node7" href="$classCarcassonne_1_1Riviere.html" title="Represente une Riviere." alt="" coords="559,157,717,184"/>
+<area shape="rect" id="node8" href="$classCarcassonne_1_1Route.html" title="Represente une Route." alt="" coords="563,208,713,235"/>
+<area shape="rect" id="node11" href="$classCarcassonne_1_1Pre.html" title="Represente un Pre." alt="" coords="571,259,705,285"/>
+<area shape="rect" id="node12" href="$classCarcassonne_1_1Ville.html" title="Represente une Ville." alt="" coords="567,309,709,336"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Carcassonne::JoueurException" name="Carcassonne::JoueurException">
+<area shape="rect" id="node1" title="Exceptions declenchees par les joueurs." alt="" coords="5,300,224,377"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1CarcassonneException.html" title="Regroupe toutes les exceptions du jeu." alt="" coords="12,131,217,252"/>
+<area shape="rect" id="node3" title=" " alt="" coords="71,5,158,83"/>
+</map>

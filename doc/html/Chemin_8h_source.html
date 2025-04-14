@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de Chemin.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Chemin.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Chemin_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __CHEMIN_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __CHEMIN_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Environnement_8h.html">Environnement.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="GestionnaireMemoireEnvironnement_8h.html">GestionnaireMemoireEnvironnement.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Symbols_8h.html">Symbols.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Chemin.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Chemin.html">Chemin</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    public :</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Chemin.html#a1f318c847120725b3b433fd380117122">   32</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Chemin.html#a1f318c847120725b3b433fd380117122">Chemin</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile) : <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>(premiereTuile) {}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ~<a class="code" href="classCarcassonne_1_1Chemin.html">Chemin</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Riviere.html">   43</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Riviere.html">Riviere</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Chemin.html">Chemin</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    private :</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    public :</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Riviere.html#adf5db2631ca6c79b0f53b65a31f66aae">   50</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Riviere.html#adf5db2631ca6c79b0f53b65a31f66aae">Riviere</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile):<a class="code" href="classCarcassonne_1_1Chemin.html">Chemin</a>(premiereTuile){}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        ~<a class="code" href="classCarcassonne_1_1Riviere.html">Riviere</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Riviere.html#a796cf23faded771a20a6e14386079584">   58</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>&amp; <a class="code" href="classCarcassonne_1_1Riviere.html#a796cf23faded771a20a6e14386079584">toChar</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespaceCarcassonne.html#a7bc7a389996cc9f9763f665e1a4df289">C_RIVIERE</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Riviere.html#ad430d388765e47552c2c78634c8ecd30">   68</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Riviere.html">Riviere</a>* <a class="code" href="classCarcassonne_1_1Riviere.html#ad430d388765e47552c2c78634c8ecd30">connect</a>(<a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* env)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">if</span>(env == <span class="keyword">this</span>) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement&lt;Riviere&gt;::getInstance</a>()-&gt;<a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a2f5e4c5dbb035775ef88895566309e47">fusionner</a>(<span class="keyword">this</span>, <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classCarcassonne_1_1Riviere.html">Riviere</a>*<span class="keyword">&gt;</span>(env));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Riviere.html#a93d8e9f827c50e2e44d96866d5742b40">   80</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Riviere.html#a93d8e9f827c50e2e44d96866d5742b40">peutPoserMeeple</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Route.html">   89</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Route.html">Route</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Chemin.html">Chemin</a> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    private :</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    public :</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Route.html#a127a759cc695540a8b9c77f677abc126">   96</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Route.html#a127a759cc695540a8b9c77f677abc126">Route</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile):<a class="code" href="classCarcassonne_1_1Chemin.html">Chemin</a>(premiereTuile){}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        ~<a class="code" href="classCarcassonne_1_1Route.html">Route</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Route.html#abd735cd0732c0f50a1a42a08e528f192">  104</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>&amp; <a class="code" href="classCarcassonne_1_1Route.html#abd735cd0732c0f50a1a42a08e528f192">toChar</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespaceCarcassonne.html#a039f787908ea4f45dcd7bf11b019162f">C_ROUTE</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Route.html#a4b696bc67864675e8d9672488c59d21c">  114</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Route.html">Route</a>* <a class="code" href="classCarcassonne_1_1Route.html#a4b696bc67864675e8d9672488c59d21c">connect</a>(<a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* env)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">if</span>(env == <span class="keyword">this</span>) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement&lt;Route&gt;::getInstance</a>()-&gt;<a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a2f5e4c5dbb035775ef88895566309e47">fusionner</a>(<span class="keyword">this</span>, <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classCarcassonne_1_1Route.html">Route</a>*<span class="keyword">&gt;</span>(env));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    };</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aSymbols_8h_html"><div class="ttname"><a href="Symbols_8h.html">Symbols.h</a></div><div class="ttdoc">Definis dans le fichier csv representant une les differents elements de decors presents sur une tuile...</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Riviere_html_adf5db2631ca6c79b0f53b65a31f66aae"><div class="ttname"><a href="classCarcassonne_1_1Riviere.html#adf5db2631ca6c79b0f53b65a31f66aae">Carcassonne::Riviere::Riviere</a></div><div class="ttdeci">Riviere(Tuile *premiereTuile)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Chemin.h:50</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_a2f5e4c5dbb035775ef88895566309e47"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a2f5e4c5dbb035775ef88895566309e47">Carcassonne::GestionnaireMemoireEnvironnement::fusionner</a></div><div class="ttdeci">virtual T * fusionner(T *envOriginal, T *envAFusionner)</div><div class="ttdoc">Fusionne deux environnements.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:96</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html">Carcassonne::Tuile</a></div><div class="ttdoc">Represente une Tuile.</div><div class="ttdef"><b>Definition:</b> Tuile.h:122</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a7bc7a389996cc9f9763f665e1a4df289"><div class="ttname"><a href="namespaceCarcassonne.html#a7bc7a389996cc9f9763f665e1a4df289">Carcassonne::C_RIVIERE</a></div><div class="ttdeci">const char C_RIVIERE</div><div class="ttdef"><b>Definition:</b> Symbols.h:41</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a></div><div class="ttdoc">Represente le concept general des elements pouvant se trouver sur une Tuile.</div><div class="ttdef"><b>Definition:</b> Environnement.h:25</div></div>
+<div class="ttc" id="aGestionnaireMemoireEnvironnement_8h_html"><div class="ttname"><a href="GestionnaireMemoireEnvironnement_8h.html">GestionnaireMemoireEnvironnement.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Riviere_html_a796cf23faded771a20a6e14386079584"><div class="ttname"><a href="classCarcassonne_1_1Riviere.html#a796cf23faded771a20a6e14386079584">Carcassonne::Riviere::toChar</a></div><div class="ttdeci">const char &amp; toChar() const override</div><div class="ttdoc">Donne le caractere representant une Riviere.</div><div class="ttdef"><b>Definition:</b> Chemin.h:58</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">Carcassonne::GestionnaireMemoireEnvironnement</a></div><div class="ttdoc">Represente le concept general de Gestionnaire memoire des environnements.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:27</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a039f787908ea4f45dcd7bf11b019162f"><div class="ttname"><a href="namespaceCarcassonne.html#a039f787908ea4f45dcd7bf11b019162f">Carcassonne::C_ROUTE</a></div><div class="ttdeci">const char C_ROUTE</div><div class="ttdef"><b>Definition:</b> Symbols.h:40</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Riviere_html_a93d8e9f827c50e2e44d96866d5742b40"><div class="ttname"><a href="classCarcassonne_1_1Riviere.html#a93d8e9f827c50e2e44d96866d5742b40">Carcassonne::Riviere::peutPoserMeeple</a></div><div class="ttdeci">bool peutPoserMeeple() const override</div><div class="ttdoc">Indique si l'on peut poser un meeple dessus.</div><div class="ttdef"><b>Definition:</b> Chemin.h:80</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Riviere_html"><div class="ttname"><a href="classCarcassonne_1_1Riviere.html">Carcassonne::Riviere</a></div><div class="ttdoc">Represente une Riviere.</div><div class="ttdef"><b>Definition:</b> Chemin.h:43</div></div>
+<div class="ttc" id="aEnvironnement_8h_html"><div class="ttname"><a href="Environnement_8h.html">Environnement.h</a></div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Chemin_html"><div class="ttname"><a href="classCarcassonne_1_1Chemin.html">Carcassonne::Chemin</a></div><div class="ttdoc">Represente le concept general de Chemin.</div><div class="ttdef"><b>Definition:</b> Chemin.h:26</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Route_html_abd735cd0732c0f50a1a42a08e528f192"><div class="ttname"><a href="classCarcassonne_1_1Route.html#abd735cd0732c0f50a1a42a08e528f192">Carcassonne::Route::toChar</a></div><div class="ttdeci">const char &amp; toChar() const override</div><div class="ttdoc">Donne le caractere representant une Route.</div><div class="ttdef"><b>Definition:</b> Chemin.h:104</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Route_html"><div class="ttname"><a href="classCarcassonne_1_1Route.html">Carcassonne::Route</a></div><div class="ttdoc">Represente une Route.</div><div class="ttdef"><b>Definition:</b> Chemin.h:89</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Chemin_html_a1f318c847120725b3b433fd380117122"><div class="ttname"><a href="classCarcassonne_1_1Chemin.html#a1f318c847120725b3b433fd380117122">Carcassonne::Chemin::Chemin</a></div><div class="ttdeci">Chemin(Tuile *premiereTuile)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Chemin.h:32</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Riviere_html_ad430d388765e47552c2c78634c8ecd30"><div class="ttname"><a href="classCarcassonne_1_1Riviere.html#ad430d388765e47552c2c78634c8ecd30">Carcassonne::Riviere::connect</a></div><div class="ttdeci">Riviere * connect(Environnement *env) override</div><div class="ttdoc">Connecte la riviere courante a une autre.</div><div class="ttdef"><b>Definition:</b> Chemin.h:68</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Route_html_a4b696bc67864675e8d9672488c59d21c"><div class="ttname"><a href="classCarcassonne_1_1Route.html#a4b696bc67864675e8d9672488c59d21c">Carcassonne::Route::connect</a></div><div class="ttdeci">Route * connect(Environnement *env) override</div><div class="ttdoc">Connecte la route courante a une autre.</div><div class="ttdef"><b>Definition:</b> Chemin.h:114</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Route_html_a127a759cc695540a8b9c77f677abc126"><div class="ttname"><a href="classCarcassonne_1_1Route.html#a127a759cc695540a8b9c77f677abc126">Carcassonne::Route::Route</a></div><div class="ttdeci">Route(Tuile *premiereTuile)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Chemin.h:96</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

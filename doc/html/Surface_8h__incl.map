@@ -1,0 +1,21 @@
+<map id="Surface.h" name="Surface.h">
+<area shape="rect" id="node1" title=" " alt="" coords="119,5,201,32"/>
+<area shape="rect" id="node2" href="$Batiment_8h.html" title=" " alt="" coords="70,80,165,107"/>
+<area shape="rect" id="node3" href="$Symbols_8h.html" title="Definis dans le fichier csv representant une les differents elements de decors presents sur une tuile..." alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node4" href="$Environnement_8h.html" title=" " alt="" coords="109,229,243,256"/>
+<area shape="rect" id="node12" href="$GestionnaireMemoireEnvironnement_8h.html" title=" " alt="" coords="240,80,515,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="225,304,268,331"/>
+<area shape="rect" id="node6" href="$Personnages_8h.html" title=" " alt="" coords="84,304,201,331"/>
+<area shape="rect" id="node10" href="$CarcassonneException_8h.html" title=" " alt="" coords="292,304,473,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="320,453,379,480"/>
+<area shape="rect" id="node8" href="$Joueur_8h.html" title=" " alt="" coords="237,379,312,405"/>
+<area shape="rect" id="node9" title=" " alt="" coords="610,453,673,480"/>
+<area shape="rect" id="node11" title=" " alt="" coords="387,379,474,405"/>
+<area shape="rect" id="node13" title=" " alt="" coords="760,304,840,331"/>
+<area shape="rect" id="node14" href="$Tuile_8h.html" title=" " alt="" coords="448,155,512,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="419,229,475,256"/>
+<area shape="rect" id="node16" href="$Extensions_8h.html" title="Defini les extensions du jeu." alt="" coords="550,379,655,405"/>
+<area shape="rect" id="node18" href="$Coordonnee_8h.html" title=" " alt="" coords="600,229,712,256"/>
+<area shape="rect" id="node17" title=" " alt="" coords="543,453,585,480"/>
+<area shape="rect" id="node19" title=" " alt="" coords="600,304,685,331"/>
+</map>

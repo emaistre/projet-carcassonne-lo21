@@ -1,0 +1,10 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,92,159"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1CarcassonneException.html" title="Regroupe toutes les exceptions du jeu." alt="" coords="140,125,336,166"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1InterfaceException.html" title="Exceptions declenchees par l&#39;interface." alt="" coords="384,5,619,32"/>
+<area shape="rect" id="node4" href="$classCarcassonne_1_1JoueurException.html" title="Exceptions declenchees par les joueurs." alt="" coords="392,56,611,83"/>
+<area shape="rect" id="node5" href="$classCarcassonne_1_1MemoireException.html" title="Exceptions declenchees par les gestionnaires memoire." alt="" coords="384,107,619,133"/>
+<area shape="rect" id="node6" href="$classCarcassonne_1_1PiocheException.html" title="Exceptions declenchees par la Pioche." alt="" coords="391,157,611,184"/>
+<area shape="rect" id="node7" href="$classCarcassonne_1_1PlateauException.html" title="Exceptions declenchees par le Plateau." alt="" coords="388,208,615,235"/>
+<area shape="rect" id="node8" href="$classCarcassonne_1_1TuileException.html" title="Exceptions declenchees par les Tuiles." alt="" coords="398,259,605,285"/>
+</map>

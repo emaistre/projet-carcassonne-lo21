@@ -1,0 +1,6 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$classCarcassonne_1_1Meeple.html" title="Represente un Meeple." alt="" coords="5,56,167,83"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Abbe.html" title="Represente un Abbe." alt="" coords="239,5,386,32"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1BasicMeeple.html" title="Represente un Meeple Basique." alt="" coords="215,56,411,83"/>
+<area shape="rect" id="node4" href="$classCarcassonne_1_1GdMeeple.html" title="Represente un Grand Meeple." alt="" coords="223,107,402,133"/>
+</map>

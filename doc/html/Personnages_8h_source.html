@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de Personnages.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Personnages.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Personnages_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __PERSONNAGES_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __PERSONNAGES_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Joueur_8h.html">Joueur.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span>Environnement;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Meeple.html">   22</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">bool</span> enJeu; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classCarcassonne_1_1Joueur.html">Joueur</a> * joueur; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Meeple.html#a09ff425e21c549190a9f1921894b9128">   33</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Meeple.html#a09ff425e21c549190a9f1921894b9128">Meeple</a>(<a class="code" href="classCarcassonne_1_1Joueur.html">Joueur</a> * j): enJeu(false), joueur(j){}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classCarcassonne_1_1Meeple.html#aa41015e5ba33c6dadd0d77c418a22f10">~Meeple</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Meeple.html#abac1e06fed3be75822103926abd6a967">   42</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Joueur.html">Joueur</a>* <a class="code" href="classCarcassonne_1_1Meeple.html#abac1e06fed3be75822103926abd6a967">getProprietaire</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> joueur;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Meeple.html#a13af3da83719509cd375c94d23a4c02a">   50</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Meeple.html#a13af3da83719509cd375c94d23a4c02a">getEtat</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> enJeu;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Meeple.html#a0bf7c775d581d588265363cbd1078a30">   57</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Meeple.html#a0bf7c775d581d588265363cbd1078a30">misEnJeu</a>() {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            enJeu = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Meeple.html#ab8b66d291534b164835510738c46eb1e">   64</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Meeple.html#ab8b66d291534b164835510738c46eb1e">recuperer</a>() {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            enJeu = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Meeple.html#aee6b54ce6dd3bbe258d262d866814786">   72</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="classCarcassonne_1_1Meeple.html#aee6b54ce6dd3bbe258d262d866814786">toString</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Meeple&quot;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Meeple.html#ae7d8cfd3e3a083aaeadb1a090c1baced">   81</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Meeple.html#ae7d8cfd3e3a083aaeadb1a090c1baced">peutEtreRetire</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>&amp; e) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1BasicMeeple.html">   90</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1BasicMeeple.html">BasicMeeple</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1BasicMeeple.html#a2673b29b4475af3a043c74a83ec348da">   96</a></span>&#160;        <a class="code" href="classCarcassonne_1_1BasicMeeple.html#a2673b29b4475af3a043c74a83ec348da">BasicMeeple</a>(<a class="code" href="classCarcassonne_1_1Joueur.html">Joueur</a>* j): <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>(j){}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1BasicMeeple.html#ac2c815c9d32dc191de69ce97eb5e6aae">  102</a></span>&#160;        std::string <a class="code" href="classCarcassonne_1_1BasicMeeple.html#ac2c815c9d32dc191de69ce97eb5e6aae">toString</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Meeple&quot;</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1BasicMeeple.html#ab2d10a532bc8812ebbf29da0ad141ab6">  111</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1BasicMeeple.html#ab2d10a532bc8812ebbf29da0ad141ab6">peutEtreRetire</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>&amp; e)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GdMeeple.html">  119</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1GdMeeple.html">GdMeeple</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GdMeeple.html#a51491ae76ee0623c5898c937bf2cdc15">  125</a></span>&#160;        <a class="code" href="classCarcassonne_1_1GdMeeple.html#a51491ae76ee0623c5898c937bf2cdc15">GdMeeple</a>(<a class="code" href="classCarcassonne_1_1Joueur.html">Joueur</a>* j): <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>(j){}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GdMeeple.html#a48d8946550205732d228a9cf8324cf4e">  131</a></span>&#160;        std::string <a class="code" href="classCarcassonne_1_1GdMeeple.html#a48d8946550205732d228a9cf8324cf4e">toString</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Gd Meeple&quot;</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GdMeeple.html#a15c4e1649551822791c30b9401554e4d">  140</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1GdMeeple.html#a15c4e1649551822791c30b9401554e4d">peutEtreRetire</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>&amp; e)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    };</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Abbe.html">  148</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Abbe.html">Abbe</a> : <span class="keyword">public</span> <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Abbe.html#a88956c75d30a14047906324d8845cd3a">  154</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Abbe.html#a88956c75d30a14047906324d8845cd3a">Abbe</a>(<a class="code" href="classCarcassonne_1_1Joueur.html">Joueur</a>* j): <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>(j) {}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Abbe.html#ae0659c0dff26132da72ca4b66e11a78c">  160</a></span>&#160;        std::string <a class="code" href="classCarcassonne_1_1Abbe.html#ae0659c0dff26132da72ca4b66e11a78c">toString</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Abbe&quot;</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Abbe.html#ab83e9acbf1feb0798d539de354eb6990">  169</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Abbe.html#ab83e9acbf1feb0798d539de354eb6990">peutEtreRetire</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>&amp; e)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    };</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_ab8b66d291534b164835510738c46eb1e"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#ab8b66d291534b164835510738c46eb1e">Carcassonne::Meeple::recuperer</a></div><div class="ttdeci">void recuperer()</div><div class="ttdoc">Retire le meeple du le plateau.</div><div class="ttdef"><b>Definition:</b> Personnages.h:64</div></div>
+<div class="ttc" id="aJoueur_8h_html"><div class="ttname"><a href="Joueur_8h.html">Joueur.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_abac1e06fed3be75822103926abd6a967"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#abac1e06fed3be75822103926abd6a967">Carcassonne::Meeple::getProprietaire</a></div><div class="ttdeci">Joueur * getProprietaire() const</div><div class="ttdoc">Donne le proprietaire du meeple.</div><div class="ttdef"><b>Definition:</b> Personnages.h:42</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_a13af3da83719509cd375c94d23a4c02a"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#a13af3da83719509cd375c94d23a4c02a">Carcassonne::Meeple::getEtat</a></div><div class="ttdeci">bool getEtat() const</div><div class="ttdoc">Donne l'etat du meeple.</div><div class="ttdef"><b>Definition:</b> Personnages.h:50</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a></div><div class="ttdoc">Represente le concept general des elements pouvant se trouver sur une Tuile.</div><div class="ttdef"><b>Definition:</b> Environnement.h:25</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_a09ff425e21c549190a9f1921894b9128"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#a09ff425e21c549190a9f1921894b9128">Carcassonne::Meeple::Meeple</a></div><div class="ttdeci">Meeple(Joueur *j)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Personnages.h:33</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html">Carcassonne::Meeple</a></div><div class="ttdoc">Represente un Meeple.</div><div class="ttdef"><b>Definition:</b> Personnages.h:22</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Joueur_html"><div class="ttname"><a href="classCarcassonne_1_1Joueur.html">Carcassonne::Joueur</a></div><div class="ttdoc">Represente un joueur.</div><div class="ttdef"><b>Definition:</b> Joueur.h:26</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_a0bf7c775d581d588265363cbd1078a30"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#a0bf7c775d581d588265363cbd1078a30">Carcassonne::Meeple::misEnJeu</a></div><div class="ttdeci">void misEnJeu()</div><div class="ttdoc">Met le meeple sur le plateau.</div><div class="ttdef"><b>Definition:</b> Personnages.h:57</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_aa41015e5ba33c6dadd0d77c418a22f10"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#aa41015e5ba33c6dadd0d77c418a22f10">Carcassonne::Meeple::~Meeple</a></div><div class="ttdeci">virtual ~Meeple()=default</div><div class="ttdoc">Destructeur de la classe.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Abbe_html_ab83e9acbf1feb0798d539de354eb6990"><div class="ttname"><a href="classCarcassonne_1_1Abbe.html#ab83e9acbf1feb0798d539de354eb6990">Carcassonne::Abbe::peutEtreRetire</a></div><div class="ttdeci">bool peutEtreRetire(const Environnement &amp;e) override</div><div class="ttdoc">Indique si l'on peut retirer un meeple de la tuile.</div><div class="ttdef"><b>Definition:</b> Personnages.h:169</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GdMeeple_html_a48d8946550205732d228a9cf8324cf4e"><div class="ttname"><a href="classCarcassonne_1_1GdMeeple.html#a48d8946550205732d228a9cf8324cf4e">Carcassonne::GdMeeple::toString</a></div><div class="ttdeci">std::string toString() const override</div><div class="ttdoc">Converti le Grand Meeple en chaine de caracteres.</div><div class="ttdef"><b>Definition:</b> Personnages.h:131</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1BasicMeeple_html"><div class="ttname"><a href="classCarcassonne_1_1BasicMeeple.html">Carcassonne::BasicMeeple</a></div><div class="ttdoc">Represente un Meeple Basique.</div><div class="ttdef"><b>Definition:</b> Personnages.h:90</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GdMeeple_html_a51491ae76ee0623c5898c937bf2cdc15"><div class="ttname"><a href="classCarcassonne_1_1GdMeeple.html#a51491ae76ee0623c5898c937bf2cdc15">Carcassonne::GdMeeple::GdMeeple</a></div><div class="ttdeci">GdMeeple(Joueur *j)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Personnages.h:125</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1BasicMeeple_html_a2673b29b4475af3a043c74a83ec348da"><div class="ttname"><a href="classCarcassonne_1_1BasicMeeple.html#a2673b29b4475af3a043c74a83ec348da">Carcassonne::BasicMeeple::BasicMeeple</a></div><div class="ttdeci">BasicMeeple(Joueur *j)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Personnages.h:96</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1BasicMeeple_html_ab2d10a532bc8812ebbf29da0ad141ab6"><div class="ttname"><a href="classCarcassonne_1_1BasicMeeple.html#ab2d10a532bc8812ebbf29da0ad141ab6">Carcassonne::BasicMeeple::peutEtreRetire</a></div><div class="ttdeci">bool peutEtreRetire(const Environnement &amp;e) override</div><div class="ttdoc">Indique si l'on peut retirer un meeple de la tuile.</div><div class="ttdef"><b>Definition:</b> Personnages.h:111</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GdMeeple_html"><div class="ttname"><a href="classCarcassonne_1_1GdMeeple.html">Carcassonne::GdMeeple</a></div><div class="ttdoc">Represente un Grand Meeple.</div><div class="ttdef"><b>Definition:</b> Personnages.h:119</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GdMeeple_html_a15c4e1649551822791c30b9401554e4d"><div class="ttname"><a href="classCarcassonne_1_1GdMeeple.html#a15c4e1649551822791c30b9401554e4d">Carcassonne::GdMeeple::peutEtreRetire</a></div><div class="ttdeci">bool peutEtreRetire(const Environnement &amp;e) override</div><div class="ttdoc">Indique si l'on peut retirer un meeple de la tuile.</div><div class="ttdef"><b>Definition:</b> Personnages.h:140</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1BasicMeeple_html_ac2c815c9d32dc191de69ce97eb5e6aae"><div class="ttname"><a href="classCarcassonne_1_1BasicMeeple.html#ac2c815c9d32dc191de69ce97eb5e6aae">Carcassonne::BasicMeeple::toString</a></div><div class="ttdeci">std::string toString() const override</div><div class="ttdoc">Converti le Meeple en chaine de caracteres.</div><div class="ttdef"><b>Definition:</b> Personnages.h:102</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Abbe_html"><div class="ttname"><a href="classCarcassonne_1_1Abbe.html">Carcassonne::Abbe</a></div><div class="ttdoc">Represente un Abbe.</div><div class="ttdef"><b>Definition:</b> Personnages.h:148</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_ae7d8cfd3e3a083aaeadb1a090c1baced"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#ae7d8cfd3e3a083aaeadb1a090c1baced">Carcassonne::Meeple::peutEtreRetire</a></div><div class="ttdeci">virtual bool peutEtreRetire(const Environnement &amp;e)</div><div class="ttdoc">Indique si l'on peut retirer un meeple de la tuile.</div><div class="ttdef"><b>Definition:</b> Personnages.h:81</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Abbe_html_a88956c75d30a14047906324d8845cd3a"><div class="ttname"><a href="classCarcassonne_1_1Abbe.html#a88956c75d30a14047906324d8845cd3a">Carcassonne::Abbe::Abbe</a></div><div class="ttdeci">Abbe(Joueur *j)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Personnages.h:154</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Abbe_html_ae0659c0dff26132da72ca4b66e11a78c"><div class="ttname"><a href="classCarcassonne_1_1Abbe.html#ae0659c0dff26132da72ca4b66e11a78c">Carcassonne::Abbe::toString</a></div><div class="ttdeci">std::string toString() const override</div><div class="ttdoc">Converti l'Abbe en chaine de caracteres.</div><div class="ttdef"><b>Definition:</b> Personnages.h:160</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_aee6b54ce6dd3bbe258d262d866814786"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#aee6b54ce6dd3bbe258d262d866814786">Carcassonne::Meeple::toString</a></div><div class="ttdeci">virtual std::string toString() const</div><div class="ttdoc">Converti le Personnage en chaine de caracteres.</div><div class="ttdef"><b>Definition:</b> Personnages.h:72</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

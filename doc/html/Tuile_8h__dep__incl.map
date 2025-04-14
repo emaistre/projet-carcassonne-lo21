@@ -1,0 +1,18 @@
+<map id="Tuile.h" name="Tuile.h">
+<area shape="rect" id="node1" title=" " alt="" coords="393,5,457,32"/>
+<area shape="rect" id="node2" href="$GestionnaireMemoireEnvironnement_8h.html" title=" " alt="" coords="5,80,280,107"/>
+<area shape="rect" id="node5" href="$EnvironnementFactory_8h.html" title=" " alt="" coords="156,304,335,331"/>
+<area shape="rect" id="node7" href="$Pioche_8h.html" title=" " alt="" coords="679,80,756,107"/>
+<area shape="rect" id="node12" href="$InterfaceConsole_8h.html" title=" " alt="" coords="737,229,881,256"/>
+<area shape="rect" id="node14" href="$InterfaceEnvironnement_8h.html" title=" " alt="" coords="463,80,654,107"/>
+<area shape="rect" id="node15" href="$InterfaceTuile_8h.html" title=" " alt="" coords="455,155,577,181"/>
+<area shape="rect" id="node16" href="$InterfacePioche_8h.html" title=" " alt="" coords="362,229,497,256"/>
+<area shape="rect" id="node3" href="$Chemin_8h.html" title=" " alt="" coords="202,155,286,181"/>
+<area shape="rect" id="node4" href="$GestionnairesMemoire_8h_source.html" title=" " alt="" coords="74,229,257,256"/>
+<area shape="rect" id="node6" href="$Surface_8h.html" title=" " alt="" coords="95,155,177,181"/>
+<area shape="rect" id="node8" href="$Plateau_8h.html" title=" " alt="" coords="668,155,751,181"/>
+<area shape="rect" id="node9" href="$Jeu_8h.html" title=" " alt="" coords="673,304,727,331"/>
+<area shape="rect" id="node13" href="$InterfacePlateau_8h.html" title=" " alt="" coords="521,229,663,256"/>
+<area shape="rect" id="node10" href="$InterfaceJeu_8h_source.html" title=" " alt="" coords="536,379,648,405"/>
+<area shape="rect" id="node11" href="$InterfaceAccueil_8h.html" title=" " alt="" coords="523,453,661,480"/>
+</map>

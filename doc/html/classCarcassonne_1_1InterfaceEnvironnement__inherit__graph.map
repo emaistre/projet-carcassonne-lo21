@@ -1,0 +1,4 @@
+<map id="Carcassonne::InterfaceEnvironnement" name="Carcassonne::InterfaceEnvironnement">
+<area shape="rect" id="node1" title="Interface montrant les meeples sur l&#39;environnement." alt="" coords="5,131,276,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="87,5,194,83"/>
+</map>

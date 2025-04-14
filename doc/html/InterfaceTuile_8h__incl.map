@@ -1,0 +1,22 @@
+<map id="InterfaceTuile.h" name="InterfaceTuile.h">
+<area shape="rect" id="node1" title=" " alt="" coords="343,5,465,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="203,453,261,480"/>
+<area shape="rect" id="node3" title=" " alt="" coords="551,155,657,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="693,80,771,107"/>
+<area shape="rect" id="node5" href="$Personnages_8h.html" title=" " alt="" coords="43,304,160,331"/>
+<area shape="rect" id="node8" href="$CarcassonneException_8h.html" title=" " alt="" coords="184,304,365,331"/>
+<area shape="rect" id="node10" href="$InterfaceEnvironnement_8h.html" title=" " alt="" coords="375,80,566,107"/>
+<area shape="rect" id="node11" href="$Tuile_8h.html" title=" " alt="" coords="412,155,476,181"/>
+<area shape="rect" id="node20" href="$const_8h.html" title="Contient divers constantes." alt="" coords="681,155,751,181"/>
+<area shape="rect" id="node6" href="$Joueur_8h.html" title=" " alt="" coords="157,379,232,405"/>
+<area shape="rect" id="node7" title=" " alt="" coords="490,453,553,480"/>
+<area shape="rect" id="node9" title=" " alt="" coords="307,379,394,405"/>
+<area shape="rect" id="node16" href="$Coordonnee_8h.html" title=" " alt="" coords="688,229,800,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="557,229,613,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="611,304,691,331"/>
+<area shape="rect" id="node14" href="$Extensions_8h.html" title="Defini les extensions du jeu." alt="" coords="507,379,613,405"/>
+<area shape="rect" id="node18" href="$Environnement_8h.html" title=" " alt="" coords="248,229,381,256"/>
+<area shape="rect" id="node15" title=" " alt="" coords="577,453,620,480"/>
+<area shape="rect" id="node17" title=" " alt="" coords="765,304,851,331"/>
+<area shape="rect" id="node19" title=" " alt="" coords="389,304,432,331"/>
+</map>

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de GestionnaireMemoireEnvironnement.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GestionnaireMemoireEnvironnement.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="GestionnaireMemoireEnvironnement_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __GESTIONNAIREMEMOIREENVIRONNEMENT_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __GESTIONNAIREMEMOIREENVIRONNEMENT_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Tuile_8h.html">Tuile.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CarcassonneException_8h.html">CarcassonneException.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    protected :</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structCarcassonne_1_1GestionnaireMemoireEnvironnement_1_1Handler.html">   34</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structCarcassonne_1_1GestionnaireMemoireEnvironnement_1_1Handler.html">Handler</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement&lt;T&gt;</a>* instance;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="structCarcassonne_1_1GestionnaireMemoireEnvironnement_1_1Handler.html">Handler</a>(<a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement&lt;T&gt;</a>* ptr) { instance = ptr; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            ~<a class="code" href="structCarcassonne_1_1GestionnaireMemoireEnvironnement_1_1Handler.html">Handler</a>() { <span class="keyword">delete</span> instance; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement</a>(){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">for</span>(T* env : listeEnv)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keyword">delete</span> env;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement&lt;T&gt;</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement&lt;T&gt;</a>&amp;)=<span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a587e839c80ff811bbdfc01851b7e3b0e">   49</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="structCarcassonne_1_1GestionnaireMemoireEnvironnement_1_1Handler.html">Handler</a> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a587e839c80ff811bbdfc01851b7e3b0e">handler</a>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#aba1288e9f184b9030b30d1031801ec20">   51</a></span>&#160;        list&lt;T*&gt; <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#aba1288e9f184b9030b30d1031801ec20">listeEnv</a>; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    public :</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">   59</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement&lt;T&gt;</a>* <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">getInstance</a>() {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span>(handler.instance == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                handler.instance = <span class="keyword">new</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">GestionnaireMemoireEnvironnement&lt;T&gt;</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> handler.instance;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a78e456eb01ee713d3864eab5e28c550c">   67</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a78e456eb01ee713d3864eab5e28c550c">libererInstance</a>() {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keyword">delete</span> handler.instance;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            handler.instance = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#ac02823ad82f11e9d9f842ad7dca52ff0">   76</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#ac02823ad82f11e9d9f842ad7dca52ff0">getNbEnvEnMemoire</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> listeEnv.size(); }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a4b884fbcd1072377d38774e99b8c86f5">   83</a></span>&#160;        <span class="keyword">virtual</span> T* <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a4b884fbcd1072377d38774e99b8c86f5">creer</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            T* newEnv = newEnv=<span class="keyword">new</span> T(premiereTuile);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            listeEnv.push_back(newEnv);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> newEnv;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a2f5e4c5dbb035775ef88895566309e47">   96</a></span>&#160;        <span class="keyword">virtual</span> T* <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a2f5e4c5dbb035775ef88895566309e47">fusionner</a>(T* envOriginal, T* envAFusionner) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">if</span>(envAFusionner == <span class="keyword">nullptr</span> || envOriginal == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classCarcassonne_1_1MemoireException.html">MemoireException</a>(<span class="stringliteral">&quot;Erreur, essaie de fusionner des Tuiles incompatibles / indefinies !&quot;</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">if</span>(envOriginal == envAFusionner) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">return</span> envOriginal;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            list&lt;const Tuile*&gt; tuilesAChanger=envAFusionner-&gt;getTuiles();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* tuile : tuilesAChanger){</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                envOriginal-&gt;ajouterTuile(tuile);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="comment">//Suppression de envAFusionner</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            listeEnv.remove(envAFusionner);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">delete</span> envAFusionner;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> envOriginal;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    };</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">typename</span> GestionnaireMemoireEnvironnement&lt;T&gt;::Handler <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a587e839c80ff811bbdfc01851b7e3b0e">GestionnaireMemoireEnvironnement&lt;T&gt;::handler</a>(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // __GESTIONNAIREMEMOIREENVIRONNEMENT_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_ac02823ad82f11e9d9f842ad7dca52ff0"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#ac02823ad82f11e9d9f842ad7dca52ff0">Carcassonne::GestionnaireMemoireEnvironnement::getNbEnvEnMemoire</a></div><div class="ttdeci">virtual size_t getNbEnvEnMemoire() const</div><div class="ttdoc">Donne le nombre d'environnements geres par le gestionnaire.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:76</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_a2f5e4c5dbb035775ef88895566309e47"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a2f5e4c5dbb035775ef88895566309e47">Carcassonne::GestionnaireMemoireEnvironnement::fusionner</a></div><div class="ttdeci">virtual T * fusionner(T *envOriginal, T *envAFusionner)</div><div class="ttdoc">Fusionne deux environnements.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:96</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_a78e456eb01ee713d3864eab5e28c550c"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a78e456eb01ee713d3864eab5e28c550c">Carcassonne::GestionnaireMemoireEnvironnement::libererInstance</a></div><div class="ttdeci">static void libererInstance()</div><div class="ttdoc">Libere l'instance du Singleton.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:67</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html">Carcassonne::Tuile</a></div><div class="ttdoc">Represente une Tuile.</div><div class="ttdef"><b>Definition:</b> Tuile.h:122</div></div>
+<div class="ttc" id="astructCarcassonne_1_1GestionnaireMemoireEnvironnement_1_1Handler_html"><div class="ttname"><a href="structCarcassonne_1_1GestionnaireMemoireEnvironnement_1_1Handler.html">Carcassonne::GestionnaireMemoireEnvironnement::Handler</a></div><div class="ttdoc">Encapsule le Singleton de Gestionnaire memoire.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:34</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_a4b884fbcd1072377d38774e99b8c86f5"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a4b884fbcd1072377d38774e99b8c86f5">Carcassonne::GestionnaireMemoireEnvironnement::creer</a></div><div class="ttdeci">virtual T * creer(Tuile *premiereTuile)</div><div class="ttdoc">Cree un nouvel environnement.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:83</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_a587e839c80ff811bbdfc01851b7e3b0e"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a587e839c80ff811bbdfc01851b7e3b0e">Carcassonne::GestionnaireMemoireEnvironnement::handler</a></div><div class="ttdeci">static Handler handler</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:49</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html">Carcassonne::GestionnaireMemoireEnvironnement</a></div><div class="ttdoc">Represente le concept general de Gestionnaire memoire des environnements.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:27</div></div>
+<div class="ttc" id="aCarcassonneException_8h_html"><div class="ttname"><a href="CarcassonneException_8h.html">CarcassonneException.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_aba1288e9f184b9030b30d1031801ec20"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#aba1288e9f184b9030b30d1031801ec20">Carcassonne::GestionnaireMemoireEnvironnement::listeEnv</a></div><div class="ttdeci">list&lt; T * &gt; listeEnv</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:51</div></div>
+<div class="ttc" id="aTuile_8h_html"><div class="ttname"><a href="Tuile_8h.html">Tuile.h</a></div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1MemoireException_html"><div class="ttname"><a href="classCarcassonne_1_1MemoireException.html">Carcassonne::MemoireException</a></div><div class="ttdoc">Exceptions declenchees par les gestionnaires memoire.</div><div class="ttdef"><b>Definition:</b> CarcassonneException.h:55</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_a33bd48a293a7eb14c77d91ea1433ef75"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Carcassonne::GestionnaireMemoireEnvironnement::getInstance</a></div><div class="ttdeci">static GestionnaireMemoireEnvironnement&lt; T &gt; * getInstance()</div><div class="ttdoc">Recupere l'instance du Singleton.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:59</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

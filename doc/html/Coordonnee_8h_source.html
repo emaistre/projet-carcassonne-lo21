@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de Coordonnee.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Coordonnee.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Coordonnee_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __COORDONNEE_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __COORDONNEE_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnee.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">int</span> x = 0; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">int</span> y = 0; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnee.html#acc0be7747e33d0ed0cd118d040d2aa76">Coordonnee</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnee.html#a78526e1b6c645f0aa1b0d1f03f71ddbb">   36</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnee.html#a78526e1b6c645f0aa1b0d1f03f71ddbb">Coordonnee</a>(<span class="keywordtype">int</span> theX, <span class="keywordtype">int</span> theY) : x(theX), y(theY) {}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnee.html#a9bde6ac821cbcf69e8c681cdb644a7a6">~Coordonnee</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnee.html#a0dec24c1a2ebe247ccb25a27f79ef40d">   44</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html#a0dec24c1a2ebe247ccb25a27f79ef40d">getX</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> x; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnee.html#a4258bf85b54c72a61d71881db4550552">   49</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html#a4258bf85b54c72a61d71881db4550552">getY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> y; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnee.html#ac207119e2f42cddf507e5856df82b4be">   55</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html#ac207119e2f42cddf507e5856df82b4be">operator==</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a>&amp; c2)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> (c2.x == x) &amp;&amp; (c2.y == y);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnee.html#afda1d1b8083d679a60d44c4d37727f0b">   62</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html#afda1d1b8083d679a60d44c4d37727f0b">affiche</a>(std::ostream&amp; f)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            f &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot; ; &quot;</span> &lt;&lt; y &lt;&lt; <span class="stringliteral">&quot;)\n&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html">   71</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Coordonnees.html">Coordonnees</a> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        std::vector&lt;Coordonnee&gt; coords; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees.html#a09c4c1b4277e63849b89f69128b048a2">Coordonnees</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees.html#ae1f2514b9aa99a9b516eb18f59d14a06">~Coordonnees</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#af2d64c82e163188d9a780f049f779fb4">   87</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Coordonnees.html#af2d64c82e163188d9a780f049f779fb4">push_back</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a>&amp; c) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            coords.push_back(c);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#a56959c05e7d1c371ac33eef68220a129">   92</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Coordonnees.html#a56959c05e7d1c371ac33eef68220a129">clear</a>() {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            coords.clear();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#aa3227c900480b17bb0e8b3d4551874cb">  100</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a> <a class="code" href="classCarcassonne_1_1Coordonnees.html#aa3227c900480b17bb0e8b3d4551874cb">at</a>(<span class="keywordtype">size_t</span> idx)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> coords[idx];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#a9ec6c9005616d826cc2bc3a6690d15ff">  108</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a> <a class="code" href="classCarcassonne_1_1Coordonnees.html#a9ec6c9005616d826cc2bc3a6690d15ff">operator[]</a>(<span class="keywordtype">size_t</span> idx)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Coordonnees.html#aa3227c900480b17bb0e8b3d4551874cb">at</a>(idx);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#ae1923480e41fb41312666ae46e9619e5">  115</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classCarcassonne_1_1Coordonnees.html#ae1923480e41fb41312666ae46e9619e5">size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">return</span> coords.size();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">  122</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">iterator</a> : <span class="keyword">public</span> std::vector&lt;Coordonnee&gt;<a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">::iterator</a> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees_1_1iterator.html#a3bd65a659c606888575b44d9cd3401e9">  127</a></span>&#160;            <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a> <a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html#a3bd65a659c606888575b44d9cd3401e9">operator*</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">return</span> std::vector&lt;Coordonnee&gt;::iterator::operator*();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">iterator</a>(std::vector&lt;Coordonnee&gt;::iterator it):</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                std::vector&lt;<a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a>&gt;::<a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">iterator</a>(it) {}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Coordonnees.html">Coordonnees</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        };</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">  144</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">const_iterator</a> : <span class="keyword">public</span> std::vector&lt;Coordonnee&gt;<a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">::const_iterator</a> {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html#a7e295684df348e5bfb111c1f86485278">  149</a></span>&#160;            <span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a> <a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html#a7e295684df348e5bfb111c1f86485278">operator*</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordflow">return</span> std::vector&lt;Coordonnee&gt;::const_iterator::operator*();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">const_iterator</a>(std::vector&lt;Coordonnee&gt;::const_iterator it):</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                std::vector&lt;<a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a>&gt;::<a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">const_iterator</a>(it) {}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Coordonnees.html">Coordonnees</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        };</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#aeb26514c36a831b2c7f02c072beb55eb">  166</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">iterator</a> <a class="code" href="classCarcassonne_1_1Coordonnees.html#aeb26514c36a831b2c7f02c072beb55eb">begin</a>() { <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">iterator</a>(coords.begin()); }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#a99d8abd65308086818e355a6f0b80278">  171</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">iterator</a> <a class="code" href="classCarcassonne_1_1Coordonnees.html#a99d8abd65308086818e355a6f0b80278">end</a>() { <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Coordonnees_1_1iterator.html">iterator</a>(coords.end()); }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#ae2cbc903c5e5ff8eff3ecc20c0610b7d">  176</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">const_iterator</a> <a class="code" href="classCarcassonne_1_1Coordonnees.html#ae2cbc903c5e5ff8eff3ecc20c0610b7d">cbegin</a>() { <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">const_iterator</a>(coords.cbegin()); }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#a9c3664c80c3c03c3cd8c7344e9bc89a0">  181</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">const_iterator</a> <a class="code" href="classCarcassonne_1_1Coordonnees.html#a9c3664c80c3c03c3cd8c7344e9bc89a0">cend</a>() { <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">const_iterator</a>(coords.cend()); }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Coordonnees.html#ae81207c8e9c0814ae7e36c24f2ba276f">  186</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Coordonnees.html#ae81207c8e9c0814ae7e36c24f2ba276f">remove</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Coordonnee.html">Coordonnee</a>&amp; c) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keyword">auto</span> it = find(coords.begin(), coords.end(), c);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">if</span>(it != coords.end()) {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                coords.erase(it);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    };</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_1_1iterator_html"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees_1_1iterator.html">Carcassonne::Coordonnees::iterator</a></div><div class="ttdef"><b>Definition:</b> Coordonnee.h:122</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html_afda1d1b8083d679a60d44c4d37727f0b"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html#afda1d1b8083d679a60d44c4d37727f0b">Carcassonne::Coordonnee::affiche</a></div><div class="ttdeci">void affiche(std::ostream &amp;f) const</div><div class="ttdoc">Affiche une coordonnee dans un stream.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:62</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_ae1f2514b9aa99a9b516eb18f59d14a06"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#ae1f2514b9aa99a9b516eb18f59d14a06">Carcassonne::Coordonnees::~Coordonnees</a></div><div class="ttdeci">~Coordonnees()=default</div><div class="ttdoc">Destructeur de la classe.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_aa3227c900480b17bb0e8b3d4551874cb"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#aa3227c900480b17bb0e8b3d4551874cb">Carcassonne::Coordonnees::at</a></div><div class="ttdeci">Coordonnee at(size_t idx) const</div><div class="ttdoc">Recupere une coordonnee a un certain indice.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:100</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_aeb26514c36a831b2c7f02c072beb55eb"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#aeb26514c36a831b2c7f02c072beb55eb">Carcassonne::Coordonnees::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Renvoie l'iterateur sur le debut.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:166</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_a09c4c1b4277e63849b89f69128b048a2"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#a09c4c1b4277e63849b89f69128b048a2">Carcassonne::Coordonnees::Coordonnees</a></div><div class="ttdeci">Coordonnees()=default</div><div class="ttdoc">Constructeur de la classe.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_1_1const__iterator_html"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html">Carcassonne::Coordonnees::const_iterator</a></div><div class="ttdef"><b>Definition:</b> Coordonnee.h:144</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html">Carcassonne::Coordonnee</a></div><div class="ttdoc">Represente une coordonnee sur le plateau en 2D.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:21</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_af2d64c82e163188d9a780f049f779fb4"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#af2d64c82e163188d9a780f049f779fb4">Carcassonne::Coordonnees::push_back</a></div><div class="ttdeci">void push_back(const Coordonnee &amp;c)</div><div class="ttdoc">Ajoute une nouvelle coordonnee a la liste.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:87</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_a56959c05e7d1c371ac33eef68220a129"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#a56959c05e7d1c371ac33eef68220a129">Carcassonne::Coordonnees::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:92</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_ae2cbc903c5e5ff8eff3ecc20c0610b7d"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#ae2cbc903c5e5ff8eff3ecc20c0610b7d">Carcassonne::Coordonnees::cbegin</a></div><div class="ttdeci">const_iterator cbegin()</div><div class="ttdoc">Renvoie l'iterateur constant sur le debut.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:176</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html_a0dec24c1a2ebe247ccb25a27f79ef40d"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html#a0dec24c1a2ebe247ccb25a27f79ef40d">Carcassonne::Coordonnee::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdoc">Recupere l'abscisse de la coordonnee.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:44</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_ae81207c8e9c0814ae7e36c24f2ba276f"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#ae81207c8e9c0814ae7e36c24f2ba276f">Carcassonne::Coordonnees::remove</a></div><div class="ttdeci">void remove(const Coordonnee &amp;c)</div><div class="ttdoc">Retire une coordonee des coordonnées.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:186</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_a9c3664c80c3c03c3cd8c7344e9bc89a0"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#a9c3664c80c3c03c3cd8c7344e9bc89a0">Carcassonne::Coordonnees::cend</a></div><div class="ttdeci">const_iterator cend()</div><div class="ttdoc">Renvoie l'iterateur constant final.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:181</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html_a9bde6ac821cbcf69e8c681cdb644a7a6"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html#a9bde6ac821cbcf69e8c681cdb644a7a6">Carcassonne::Coordonnee::~Coordonnee</a></div><div class="ttdeci">~Coordonnee()=default</div><div class="ttdoc">Destructeur de la classe.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_a99d8abd65308086818e355a6f0b80278"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#a99d8abd65308086818e355a6f0b80278">Carcassonne::Coordonnees::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Renvoie l'iterateur final.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:171</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html">Carcassonne::Coordonnees</a></div><div class="ttdoc">Regroupement de coordonnees.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:71</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html_ac207119e2f42cddf507e5856df82b4be"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html#ac207119e2f42cddf507e5856df82b4be">Carcassonne::Coordonnee::operator==</a></div><div class="ttdeci">bool operator==(const Coordonnee &amp;c2) const</div><div class="ttdoc">Compare deux coordonnees.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:55</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_a9ec6c9005616d826cc2bc3a6690d15ff"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#a9ec6c9005616d826cc2bc3a6690d15ff">Carcassonne::Coordonnees::operator[]</a></div><div class="ttdeci">Coordonnee operator[](size_t idx) const</div><div class="ttdoc">Recupere une coordonnee a un certain indice.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:108</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_1_1iterator_html_a3bd65a659c606888575b44d9cd3401e9"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees_1_1iterator.html#a3bd65a659c606888575b44d9cd3401e9">Carcassonne::Coordonnees::iterator::operator*</a></div><div class="ttdeci">Coordonnee operator*() const</div><div class="ttdoc">Recupere la coordonnee courante.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:127</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html_a4258bf85b54c72a61d71881db4550552"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html#a4258bf85b54c72a61d71881db4550552">Carcassonne::Coordonnee::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdoc">Recupere l'ordonnee de la coordonnee.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:49</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_html_ae1923480e41fb41312666ae46e9619e5"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees.html#ae1923480e41fb41312666ae46e9619e5">Carcassonne::Coordonnees::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Renvoie le nombre de coordonnees presentes dans la liste.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:115</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html_acc0be7747e33d0ed0cd118d040d2aa76"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html#acc0be7747e33d0ed0cd118d040d2aa76">Carcassonne::Coordonnee::Coordonnee</a></div><div class="ttdeci">Coordonnee()=default</div><div class="ttdoc">Constructeur de la classe.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html_a78526e1b6c645f0aa1b0d1f03f71ddbb"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html#a78526e1b6c645f0aa1b0d1f03f71ddbb">Carcassonne::Coordonnee::Coordonnee</a></div><div class="ttdeci">Coordonnee(int theX, int theY)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:36</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnees_1_1const__iterator_html_a7e295684df348e5bfb111c1f86485278"><div class="ttname"><a href="classCarcassonne_1_1Coordonnees_1_1const__iterator.html#a7e295684df348e5bfb111c1f86485278">Carcassonne::Coordonnees::const_iterator::operator*</a></div><div class="ttdeci">const Coordonnee operator*() const</div><div class="ttdoc">Recupere la coordonnee courante.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:149</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

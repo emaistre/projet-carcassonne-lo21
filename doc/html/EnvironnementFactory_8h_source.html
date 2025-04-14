@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de EnvironnementFactory.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EnvironnementFactory.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="EnvironnementFactory_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __ENVIRONNEMENTFACTORY_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __ENVIRONNEMENTFACTORY_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Symbols_8h.html">Symbols.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;GestionnairesMemoire.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Tuile_8h.html">Tuile.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Environnement_8h.html">Environnement.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1EnvironnementFactory.html">   23</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1EnvironnementFactory.html">EnvironnementFactory</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1EnvironnementFactory.html#a541b1f12a45d723eb3904ac7bb4601f1">   32</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* <a class="code" href="classCarcassonne_1_1EnvironnementFactory.html#a541b1f12a45d723eb3904ac7bb4601f1">createNouvEnvironnement</a>(<a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* t, <span class="keyword">const</span> <span class="keywordtype">char</span>&amp; c) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* ins;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="comment">// Selon le caractere, une structure differente est allouee</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">switch</span>(c) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a14203dc68dcb57e87dd5737666bb6f13">C_COIN</a>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Coins::getInstance</a>()-&gt;creer(t);<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a9e2a697382e86b2b80b326f455ec8d90">C_PRES</a>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Pres::getInstance</a>()-&gt;creer(t);<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#afe834faf5aadee80a69694edd317640a">C_VILLE</a>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Villes::getInstance</a>()-&gt;creer(t);<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a4317255d2111deabb571081accf9ce8c">C_BOUCLIER</a>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                ins = <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Villes::getInstance</a>()-&gt;creer(t);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classCarcassonne_1_1Ville.html">Ville</a>*<span class="keyword">&gt;</span>(ins)-&gt;setOption(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(idTypesVilles::AVEC_BOUCLIER));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">return</span> ins;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a20183f3e5f71b6d418591df62c2ada4b">C_CATHEDRALE</a>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                ins = <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Villes::getInstance</a>()-&gt;creer(t);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classCarcassonne_1_1Ville.html">Ville</a>*<span class="keyword">&gt;</span>(ins)-&gt;setOption(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(idTypesVilles::AVEC_CATHEDRALE));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">return</span> ins;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a7871d6b6d6c29bd63288c12cb30d8fe7">C_ABBAYE</a>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Abbayes::getInstance</a>()-&gt;creer(t);<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a771bb0152ed647bf8b201be5d9b8f131">C_JARDIN</a>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Jardins::getInstance</a>()-&gt;creer(t);<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a52cadbf1676ed0e4933179eda4ff9f55">C_AUBERGE</a>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Auberges::getInstance</a>()-&gt;creer(t);<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a039f787908ea4f45dcd7bf11b019162f">C_ROUTE</a>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Routes::getInstance</a>()-&gt;creer(t);<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="namespaceCarcassonne.html#a7bc7a389996cc9f9763f665e1a4df289">C_RIVIERE</a>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Rivieres::getInstance</a>()-&gt;creer(t);<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // __ENVIRONNEMENTFACTORY_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aSymbols_8h_html"><div class="ttname"><a href="Symbols_8h.html">Symbols.h</a></div><div class="ttdoc">Definis dans le fichier csv representant une les differents elements de decors presents sur une tuile...</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html">Carcassonne::Tuile</a></div><div class="ttdoc">Represente une Tuile.</div><div class="ttdef"><b>Definition:</b> Tuile.h:122</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a7bc7a389996cc9f9763f665e1a4df289"><div class="ttname"><a href="namespaceCarcassonne.html#a7bc7a389996cc9f9763f665e1a4df289">Carcassonne::C_RIVIERE</a></div><div class="ttdeci">const char C_RIVIERE</div><div class="ttdef"><b>Definition:</b> Symbols.h:41</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a></div><div class="ttdoc">Represente le concept general des elements pouvant se trouver sur une Tuile.</div><div class="ttdef"><b>Definition:</b> Environnement.h:25</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a9e2a697382e86b2b80b326f455ec8d90"><div class="ttname"><a href="namespaceCarcassonne.html#a9e2a697382e86b2b80b326f455ec8d90">Carcassonne::C_PRES</a></div><div class="ttdeci">const char C_PRES</div><div class="ttdef"><b>Definition:</b> Symbols.h:30</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Ville_html"><div class="ttname"><a href="classCarcassonne_1_1Ville.html">Carcassonne::Ville</a></div><div class="ttdoc">Represente une Ville.</div><div class="ttdef"><b>Definition:</b> Surface.h:109</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a039f787908ea4f45dcd7bf11b019162f"><div class="ttname"><a href="namespaceCarcassonne.html#a039f787908ea4f45dcd7bf11b019162f">Carcassonne::C_ROUTE</a></div><div class="ttdeci">const char C_ROUTE</div><div class="ttdef"><b>Definition:</b> Symbols.h:40</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a52cadbf1676ed0e4933179eda4ff9f55"><div class="ttname"><a href="namespaceCarcassonne.html#a52cadbf1676ed0e4933179eda4ff9f55">Carcassonne::C_AUBERGE</a></div><div class="ttdeci">const char C_AUBERGE</div><div class="ttdef"><b>Definition:</b> Symbols.h:36</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a4317255d2111deabb571081accf9ce8c"><div class="ttname"><a href="namespaceCarcassonne.html#a4317255d2111deabb571081accf9ce8c">Carcassonne::C_BOUCLIER</a></div><div class="ttdeci">const char C_BOUCLIER</div><div class="ttdef"><b>Definition:</b> Symbols.h:27</div></div>
+<div class="ttc" id="aEnvironnement_8h_html"><div class="ttname"><a href="Environnement_8h.html">Environnement.h</a></div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a771bb0152ed647bf8b201be5d9b8f131"><div class="ttname"><a href="namespaceCarcassonne.html#a771bb0152ed647bf8b201be5d9b8f131">Carcassonne::C_JARDIN</a></div><div class="ttdeci">const char C_JARDIN</div><div class="ttdef"><b>Definition:</b> Symbols.h:35</div></div>
+<div class="ttc" id="aTuile_8h_html"><div class="ttname"><a href="Tuile_8h.html">Tuile.h</a></div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1EnvironnementFactory_html"><div class="ttname"><a href="classCarcassonne_1_1EnvironnementFactory.html">Carcassonne::EnvironnementFactory</a></div><div class="ttdoc">Usine pour construire des nouveaux environnements.</div><div class="ttdef"><b>Definition:</b> EnvironnementFactory.h:23</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a7871d6b6d6c29bd63288c12cb30d8fe7"><div class="ttname"><a href="namespaceCarcassonne.html#a7871d6b6d6c29bd63288c12cb30d8fe7">Carcassonne::C_ABBAYE</a></div><div class="ttdeci">const char C_ABBAYE</div><div class="ttdef"><b>Definition:</b> Symbols.h:34</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a14203dc68dcb57e87dd5737666bb6f13"><div class="ttname"><a href="namespaceCarcassonne.html#a14203dc68dcb57e87dd5737666bb6f13">Carcassonne::C_COIN</a></div><div class="ttdeci">const char C_COIN</div><div class="ttdef"><b>Definition:</b> Symbols.h:26</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a20183f3e5f71b6d418591df62c2ada4b"><div class="ttname"><a href="namespaceCarcassonne.html#a20183f3e5f71b6d418591df62c2ada4b">Carcassonne::C_CATHEDRALE</a></div><div class="ttdeci">const char C_CATHEDRALE</div><div class="ttdef"><b>Definition:</b> Symbols.h:37</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1EnvironnementFactory_html_a541b1f12a45d723eb3904ac7bb4601f1"><div class="ttname"><a href="classCarcassonne_1_1EnvironnementFactory.html#a541b1f12a45d723eb3904ac7bb4601f1">Carcassonne::EnvironnementFactory::createNouvEnvironnement</a></div><div class="ttdeci">static Environnement * createNouvEnvironnement(Tuile *t, const char &amp;c)</div><div class="ttdoc">Cree un nouvel environnement.</div><div class="ttdef"><b>Definition:</b> EnvironnementFactory.h:32</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1GestionnaireMemoireEnvironnement_html_a33bd48a293a7eb14c77d91ea1433ef75"><div class="ttname"><a href="classCarcassonne_1_1GestionnaireMemoireEnvironnement.html#a33bd48a293a7eb14c77d91ea1433ef75">Carcassonne::GestionnaireMemoireEnvironnement::getInstance</a></div><div class="ttdeci">static GestionnaireMemoireEnvironnement&lt; T &gt; * getInstance()</div><div class="ttdoc">Recupere l'instance du Singleton.</div><div class="ttdef"><b>Definition:</b> GestionnaireMemoireEnvironnement.h:59</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_afe834faf5aadee80a69694edd317640a"><div class="ttname"><a href="namespaceCarcassonne.html#afe834faf5aadee80a69694edd317640a">Carcassonne::C_VILLE</a></div><div class="ttdeci">const char C_VILLE</div><div class="ttdef"><b>Definition:</b> Symbols.h:31</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

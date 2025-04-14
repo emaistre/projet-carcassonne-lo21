@@ -1,0 +1,5 @@
+<map id="Carcassonne::Jeu" name="Carcassonne::Jeu">
+<area shape="rect" id="node1" title="Represente une partie generale de Carcassonne." alt="" coords="87,5,325,317"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1JeuConsole.html" title="Represente une partie de Carcassonne en Console." alt="" coords="5,395,191,487"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1JeuGraphique.html" title=" " alt="" coords="215,365,415,516"/>
+</map>

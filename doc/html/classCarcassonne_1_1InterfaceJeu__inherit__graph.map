@@ -1,0 +1,4 @@
+<map id="Carcassonne::InterfaceJeu" name="Carcassonne::InterfaceJeu">
+<area shape="rect" id="node1" title="Interface du jeu." alt="" coords="5,131,249,399"/>
+<area shape="rect" id="node2" title=" " alt="" coords="88,5,167,83"/>
+</map>

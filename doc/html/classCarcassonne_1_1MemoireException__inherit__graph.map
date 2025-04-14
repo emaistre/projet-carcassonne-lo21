@@ -1,0 +1,5 @@
+<map id="Carcassonne::MemoireException" name="Carcassonne::MemoireException">
+<area shape="rect" id="node1" title="Exceptions declenchees par les gestionnaires memoire." alt="" coords="5,300,240,377"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1CarcassonneException.html" title="Regroupe toutes les exceptions du jeu." alt="" coords="20,131,225,252"/>
+<area shape="rect" id="node3" title=" " alt="" coords="79,5,166,83"/>
+</map>

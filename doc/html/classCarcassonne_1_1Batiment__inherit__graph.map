@@ -1,0 +1,7 @@
+<map id="Carcassonne::Batiment" name="Carcassonne::Batiment">
+<area shape="rect" id="node1" title="Represente le concept general de Batiment." alt="" coords="189,292,363,413"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1Abbaye.html" title="Represente une Abbaye." alt="" coords="5,461,168,568"/>
+<area shape="rect" id="node4" href="$classCarcassonne_1_1Auberge.html" title="Represente une Auberge." alt="" coords="193,461,359,568"/>
+<area shape="rect" id="node5" href="$classCarcassonne_1_1Jardin.html" title="Represente un Jardin." alt="" coords="383,461,534,568"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Environnement.html" title="Represente le concept general des elements pouvant se trouver sur une Tuile." alt="" coords="170,5,382,244"/>
+</map>

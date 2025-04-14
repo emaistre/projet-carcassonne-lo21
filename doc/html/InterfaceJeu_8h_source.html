@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de InterfaceJeu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">InterfaceJeu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __INTERFACEJEU_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __INTERFACEJEU_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Jeu_8h.html">Jeu.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="InterfacePlateau_8h.html">InterfacePlateau.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="InterfaceJoueurs_8h.html">InterfaceJoueurs.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="InterfacePioche_8h.html">InterfacePioche.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="InterfaceActions_8h.html">InterfaceActions.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>QVBoxLayout;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>QHBoxLayout;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>QLabel;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>QPushButton;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1InterfaceJeu.html">   34</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1InterfaceJeu.html">InterfaceJeu</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        Q_OBJECT</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfacePlateau.html">InterfacePlateau</a> plateau;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceJoueurs.html">InterfaceJoueurs</a> joueurs;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfacePioche.html">InterfacePioche</a> pioche;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceActions.html">InterfaceActions</a> actions;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        QHBoxLayout* layoutPrincipal;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        QVBoxLayout *layoutGauche, *layoutDroite;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        QLabel* infoPartie;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        QPushButton* btnPass;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::list&lt;InterfaceTuile*&gt; tuilesAReset;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        std::list&lt;InterfaceTuile*&gt; tuilesAvecMeeples;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classCarcassonne_1_1JeuGraphique.html">JeuGraphique</a> jeu;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceTuile.html">InterfaceTuile</a>* tuilePosee = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* envPose = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceJeu.html">InterfaceJeu</a>(std::vector&lt;extensions&gt; ext, <span class="keywordtype">size_t</span> nbJoueurs = 2, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceJeu.html">InterfaceJeu</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html">InterfaceJeu</a>&amp; j)=<span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classCarcassonne_1_1InterfaceJeu.html">InterfaceJeu</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html">InterfaceJeu</a>&amp; j)=<span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classCarcassonne_1_1InterfaceJeu.html">InterfaceJeu</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html#a431ded1e300e7f06f5498c2947167bc7">resetInterface</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html#a677c68a1d8d7aecbc7649f0c06e3d338">afficheEmplacementsJouables</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html#a43066127be3ff8ed2f4dff704a396ecd">afficheScore</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html#a4827e420906bb36ca9a67169a9289a15">afficheJoueur</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> afficheMeeples();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html#a94f42a2beb34cc3674393cca21e4454b">afficheTuileCourante</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">void</span> tourSuivant();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html#a8e1c98cb52a6a7f84bdd99943996426b">finPartie</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html#a32072e5a7088595ae4d36a951794f9b4">afficheGagnant</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1InterfaceJeu.html#a12d033b3d9dbc76b175366986c7b4084">afficheMessageErreur</a>(<span class="keyword">const</span> <a class="code" href="namespaceCarcassonne.html#a0a7eaaa2acf57e718ce1047c204921f2">InterfaceError</a>&amp; err, <span class="keyword">const</span> std::string&amp; msg = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">void</span> initPartie();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">void</span> initPlateau();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span> actualiser();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">void</span> interationMeeplesActif();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">void</span> interationMeeplesStop();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">void</span> handleRotation(<a class="code" href="namespaceCarcassonne.html#abccddc0c09403cc2edac982dea7412a4">Carcassonne::directionRotation</a> d);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">void</span> handleRepioche();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">void</span> handlePlacementTuile(<a class="code" href="classCarcassonne_1_1Coordonnee.html">Carcassonne::Coordonnee</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">void</span> handleDemandePlacementMeeple(<a class="code" href="classCarcassonne_1_1InterfaceTuile.html">Carcassonne::InterfaceTuile</a>*, <a class="code" href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a>*);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">void</span> handlePlacementImpossible(<a class="code" href="classCarcassonne_1_1InterfaceTuile.html">Carcassonne::InterfaceTuile</a>*);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">void</span> handlePassageTour();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">void</span> handlePlacementMeeple(<a class="code" href="classCarcassonne_1_1InterfaceMeeple.html">Carcassonne::InterfaceMeeple</a>*);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">void</span> handleRetraitMeeple(<a class="code" href="classCarcassonne_1_1InterfaceTuile.html">Carcassonne::InterfaceTuile</a>*, <a class="code" href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a>*);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">void</span> handleValidePoints();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    };</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif // __INTERFACEJEU_H__</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Tous les types de gestion de memoire.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceActions_html"><div class="ttname"><a href="classCarcassonne_1_1InterfaceActions.html">Carcassonne::InterfaceActions</a></div><div class="ttdoc">Interface gerant les actions.</div><div class="ttdef"><b>Definition:</b> InterfaceActions.h:29</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_a0a7eaaa2acf57e718ce1047c204921f2"><div class="ttname"><a href="namespaceCarcassonne.html#a0a7eaaa2acf57e718ce1047c204921f2">Carcassonne::InterfaceError</a></div><div class="ttdeci">InterfaceError</div><div class="ttdoc">Differents types d'erreur pour l'interface.</div><div class="ttdef"><b>Definition:</b> types.h:24</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html_a32072e5a7088595ae4d36a951794f9b4"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html#a32072e5a7088595ae4d36a951794f9b4">Carcassonne::InterfaceJeu::afficheGagnant</a></div><div class="ttdeci">void afficheGagnant()</div><div class="ttdoc">Affiche le gagnant.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.cpp:190</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Coordonnee_html"><div class="ttname"><a href="classCarcassonne_1_1Coordonnee.html">Carcassonne::Coordonnee</a></div><div class="ttdoc">Represente une coordonnee sur le plateau en 2D.</div><div class="ttdef"><b>Definition:</b> Coordonnee.h:21</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a></div><div class="ttdoc">Represente le concept general des elements pouvant se trouver sur une Tuile.</div><div class="ttdef"><b>Definition:</b> Environnement.h:25</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfacePlateau_html"><div class="ttname"><a href="classCarcassonne_1_1InterfacePlateau.html">Carcassonne::InterfacePlateau</a></div><div class="ttdoc">Interface d'un plateau.</div><div class="ttdef"><b>Definition:</b> InterfacePlateau.h:30</div></div>
+<div class="ttc" id="aInterfacePioche_8h_html"><div class="ttname"><a href="InterfacePioche_8h.html">InterfacePioche.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html_a12d033b3d9dbc76b175366986c7b4084"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html#a12d033b3d9dbc76b175366986c7b4084">Carcassonne::InterfaceJeu::afficheMessageErreur</a></div><div class="ttdeci">void afficheMessageErreur(const InterfaceError &amp;err, const std::string &amp;msg=&quot;&quot;)</div><div class="ttdoc">Affiche un message d'erreur.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.cpp:195</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html_abccddc0c09403cc2edac982dea7412a4"><div class="ttname"><a href="namespaceCarcassonne.html#abccddc0c09403cc2edac982dea7412a4">Carcassonne::directionRotation</a></div><div class="ttdeci">directionRotation</div><div class="ttdoc">Les differents sens de rotation possibles.</div><div class="ttdef"><b>Definition:</b> Tuile.h:28</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html_a94f42a2beb34cc3674393cca21e4454b"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html#a94f42a2beb34cc3674393cca21e4454b">Carcassonne::InterfaceJeu::afficheTuileCourante</a></div><div class="ttdeci">void afficheTuileCourante()</div><div class="ttdoc">Affiche a l'utilisateur la Tuile courante.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.cpp:168</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html_a43066127be3ff8ed2f4dff704a396ecd"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html#a43066127be3ff8ed2f4dff704a396ecd">Carcassonne::InterfaceJeu::afficheScore</a></div><div class="ttdeci">void afficheScore()</div><div class="ttdoc">Affiche le score.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.cpp:156</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html_a677c68a1d8d7aecbc7649f0c06e3d338"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html#a677c68a1d8d7aecbc7649f0c06e3d338">Carcassonne::InterfaceJeu::afficheEmplacementsJouables</a></div><div class="ttdeci">void afficheEmplacementsJouables()</div><div class="ttdoc">Affiche a l'utilisateur les emplacements ou il peut poser une Tuile.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.cpp:148</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html_a4827e420906bb36ca9a67169a9289a15"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html#a4827e420906bb36ca9a67169a9289a15">Carcassonne::InterfaceJeu::afficheJoueur</a></div><div class="ttdeci">void afficheJoueur()</div><div class="ttdoc">Affiche a quel joueur c'est au tour de jouer.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.cpp:163</div></div>
+<div class="ttc" id="aInterfacePlateau_8h_html"><div class="ttname"><a href="InterfacePlateau_8h.html">InterfacePlateau.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1JeuGraphique_html"><div class="ttname"><a href="classCarcassonne_1_1JeuGraphique.html">Carcassonne::JeuGraphique</a></div><div class="ttdef"><b>Definition:</b> Jeu.h:236</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html_a8e1c98cb52a6a7f84bdd99943996426b"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html#a8e1c98cb52a6a7f84bdd99943996426b">Carcassonne::InterfaceJeu::finPartie</a></div><div class="ttdeci">void finPartie()</div><div class="ttdoc">Affiche un message signalant la fin de la partie.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.cpp:185</div></div>
+<div class="ttc" id="aInterfaceJoueurs_8h_html"><div class="ttname"><a href="InterfaceJoueurs_8h.html">InterfaceJoueurs.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceMeeple_html"><div class="ttname"><a href="classCarcassonne_1_1InterfaceMeeple.html">Carcassonne::InterfaceMeeple</a></div><div class="ttdoc">Interface d'un meeple.</div><div class="ttdef"><b>Definition:</b> InterfacePersonnages.h:23</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceTuile_html"><div class="ttname"><a href="classCarcassonne_1_1InterfaceTuile.html">Carcassonne::InterfaceTuile</a></div><div class="ttdoc">Interface d'une tuile.</div><div class="ttdef"><b>Definition:</b> InterfaceTuile.h:29</div></div>
+<div class="ttc" id="aJeu_8h_html"><div class="ttname"><a href="Jeu_8h.html">Jeu.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfacePioche_html"><div class="ttname"><a href="classCarcassonne_1_1InterfacePioche.html">Carcassonne::InterfacePioche</a></div><div class="ttdoc">Interface d'une pioche.</div><div class="ttdef"><b>Definition:</b> InterfacePioche.h:27</div></div>
+<div class="ttc" id="aInterfaceActions_8h_html"><div class="ttname"><a href="InterfaceActions_8h.html">InterfaceActions.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html">Carcassonne::InterfaceJeu</a></div><div class="ttdoc">Interface du jeu.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.h:34</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJoueurs_html"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJoueurs.html">Carcassonne::InterfaceJoueurs</a></div><div class="ttdef"><b>Definition:</b> InterfaceJoueurs.h:31</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1InterfaceJeu_html_a431ded1e300e7f06f5498c2947167bc7"><div class="ttname"><a href="classCarcassonne_1_1InterfaceJeu.html#a431ded1e300e7f06f5498c2947167bc7">Carcassonne::InterfaceJeu::resetInterface</a></div><div class="ttdeci">void resetInterface()</div><div class="ttdoc">Reinitialise des elements d'interfaces apres qu'un utilisateur a pose une Tuile par exemple.</div><div class="ttdef"><b>Definition:</b> InterfaceJeu.cpp:125</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

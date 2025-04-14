@@ -1,0 +1,6 @@
+<map id="Carcassonne::Surface" name="Carcassonne::Surface">
+<area shape="rect" id="node1" title="Represente le concept general de Surface." alt="" coords="121,292,284,384"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1Pre.html" title="Represente un Pre." alt="" coords="5,432,205,583"/>
+<area shape="rect" id="node4" href="$classCarcassonne_1_1Ville.html" title="Represente une Ville." alt="" coords="229,439,371,575"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Environnement.html" title="Represente le concept general des elements pouvant se trouver sur une Tuile." alt="" coords="97,5,309,244"/>
+</map>

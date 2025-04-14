@@ -1,0 +1,4 @@
+<map id="Carcassonne::InterfaceMeeple" name="Carcassonne::InterfaceMeeple">
+<area shape="rect" id="node1" title="Interface d&#39;un meeple." alt="" coords="5,131,224,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="75,5,154,83"/>
+</map>

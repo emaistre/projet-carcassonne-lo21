@@ -1,0 +1,10 @@
+<map id="Carcassonne::CarcassonneException" name="Carcassonne::CarcassonneException">
+<area shape="rect" id="node1" title="Regroupe toutes les exceptions du jeu." alt="" coords="647,131,852,252"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1InterfaceException.html" title="Exceptions declenchees par l&#39;interface." alt="" coords="5,300,240,377"/>
+<area shape="rect" id="node4" href="$classCarcassonne_1_1JoueurException.html" title="Exceptions declenchees par les joueurs." alt="" coords="264,300,483,377"/>
+<area shape="rect" id="node5" href="$classCarcassonne_1_1MemoireException.html" title="Exceptions declenchees par les gestionnaires memoire." alt="" coords="507,300,741,377"/>
+<area shape="rect" id="node6" href="$classCarcassonne_1_1PiocheException.html" title="Exceptions declenchees par la Pioche." alt="" coords="766,300,986,377"/>
+<area shape="rect" id="node7" href="$classCarcassonne_1_1PlateauException.html" title="Exceptions declenchees par le Plateau." alt="" coords="1011,300,1237,377"/>
+<area shape="rect" id="node8" href="$classCarcassonne_1_1TuileException.html" title="Exceptions declenchees par les Tuiles." alt="" coords="1262,300,1469,377"/>
+<area shape="rect" id="node2" title=" " alt="" coords="706,5,793,83"/>
+</map>

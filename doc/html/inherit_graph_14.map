@@ -1,0 +1,6 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,112,98"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1InterfaceCouleurJoueur.html" title="Couleur d&#39;une interface." alt="" coords="185,5,406,47"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1InterfaceEnvironnement.html" title="Interface montrant les meeples sur l&#39;environnement." alt="" coords="160,71,431,98"/>
+<area shape="rect" id="node4" href="$classCarcassonne_1_1InterfaceTuile.html" title="Interface d&#39;une tuile." alt="" coords="195,122,396,149"/>
+</map>

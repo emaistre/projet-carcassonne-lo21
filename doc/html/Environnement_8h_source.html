@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carcasonne:  Fichier source de Environnement.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Carcasonne
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Jeu Carcasonne realisé dans le cadre du projet de LO21 2022</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Environnement.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Environnement_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef __ENVIRONNEMENT_H__</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define __ENVIRONNEMENT_H__</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Personnages_8h.html">Personnages.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CarcassonneException_8h.html">CarcassonneException.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceCarcassonne.html">Carcassonne</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">class </span>Tuile;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html">   25</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    protected :</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a1a41ffa5803d456135421d53c2459c62">   27</a></span>&#160;        list&lt;const Tuile*&gt; <a class="code" href="classCarcassonne_1_1Environnement.html#a1a41ffa5803d456135421d53c2459c62">listeTuiles</a>; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">   28</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>* <a class="code" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">meeple</a> = <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    public :</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a83b912121b3c84302bc5c989caa2dc1a">   34</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Environnement.html#a83b912121b3c84302bc5c989caa2dc1a">Environnement</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* premiereTuile){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="classCarcassonne_1_1Environnement.html#a1a41ffa5803d456135421d53c2459c62">listeTuiles</a>.push_back(premiereTuile);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classCarcassonne_1_1Environnement.html#adbc650d846ef647c61a73229b165b80d">~Environnement</a>()=<span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a5c42e804d242028b96df62694a03249f">   43</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classCarcassonne_1_1Environnement.html#a5c42e804d242028b96df62694a03249f">getNbTuiles</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Environnement.html#a1a41ffa5803d456135421d53c2459c62">listeTuiles</a>.size(); }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#adf6b9071893e0398ae982ba128199925">   48</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classCarcassonne_1_1Environnement.html#adf6b9071893e0398ae982ba128199925">getNbMeeples</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">meeple</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#acb397a0ab1d795594c70bb731501588b">   59</a></span>&#160;        <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>* <a class="code" href="classCarcassonne_1_1Environnement.html#acb397a0ab1d795594c70bb731501588b">getMeeple</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">meeple</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#aa52df20ac276703b7b9bc1fc4e0d028e">   66</a></span>&#160;        list&lt;const Tuile*&gt; <a class="code" href="classCarcassonne_1_1Environnement.html#aa52df20ac276703b7b9bc1fc4e0d028e">getTuiles</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Environnement.html#a1a41ffa5803d456135421d53c2459c62">listeTuiles</a>; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a9cb6d43cb3f38e1fb49d63cf877b3147">   71</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Environnement.html#a9cb6d43cb3f38e1fb49d63cf877b3147">ajouterTuile</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Tuile.html">Tuile</a>* tuile) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="classCarcassonne_1_1Environnement.html#a1a41ffa5803d456135421d53c2459c62">listeTuiles</a>.push_back(tuile);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#ab396deeda533e0cade120a7a984dbf9b">   78</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Environnement.html#ab396deeda533e0cade120a7a984dbf9b">poserMeeple</a>(<a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>* m) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">meeple</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                m-&gt;<a class="code" href="classCarcassonne_1_1Meeple.html#a0bf7c775d581d588265363cbd1078a30">misEnJeu</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <a class="code" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">meeple</a> = m;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a40b42a6c3daf08da6c8f5f3b7a7e4f77">   88</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>* <a class="code" href="classCarcassonne_1_1Environnement.html#a40b42a6c3daf08da6c8f5f3b7a7e4f77">retirerMeeple</a>() {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">meeple</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classCarcassonne_1_1TuileException.html">TuileException</a>(<span class="stringliteral">&quot;Erreur, il n&#39;y a pas de meeple sur cet environnement !&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="classCarcassonne_1_1Meeple.html">Meeple</a>* m = <a class="code" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">meeple</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">meeple</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> m;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>&amp; <a class="code" href="classCarcassonne_1_1Environnement.html#aa6caf70ba347f48f09d0df347d5355fe">toChar</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a5fb757fcbbc482891215355fb1f6e959">  108</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCarcassonne_1_1Environnement.html#a5fb757fcbbc482891215355fb1f6e959">setOption</a>(<span class="keywordtype">int</span> option) { <span class="keywordflow">return</span>; }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#ab8d111c6261c71abcf48f234094aa208">  113</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Environnement.html#ab8d111c6261c71abcf48f234094aa208">peutPoserMeeple</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a244f427ca69e749e2ed460d0ed052348">  121</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Environnement.html#a244f427ca69e749e2ed460d0ed052348">checkMeepleConstraint</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* env)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#af876c193306f807dfc493c01b8e40787">  129</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Environnement.html#af876c193306f807dfc493c01b8e40787">sontSimilaires</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* env)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Environnement.html#aa6caf70ba347f48f09d0df347d5355fe">toChar</a>() == env-&gt;<a class="code" href="classCarcassonne_1_1Environnement.html#aa6caf70ba347f48f09d0df347d5355fe">toChar</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* <a class="code" href="classCarcassonne_1_1Environnement.html#a9d9ba9bb1ee3ca17a5ceb9d213b8c38f">connect</a>(<a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* env)=0;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classCarcassonne_1_1Environnement.html#a3f32d7a1200e10f63cba02857b8d19aa">  147</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classCarcassonne_1_1Environnement.html#a3f32d7a1200e10f63cba02857b8d19aa">peutEtreAdjacentA</a>(<span class="keyword">const</span> <a class="code" href="classCarcassonne_1_1Environnement.html">Environnement</a>* envAdj) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classCarcassonne_1_1Environnement.html#af876c193306f807dfc493c01b8e40787">sontSimilaires</a>(envAdj);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    };</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_adf6b9071893e0398ae982ba128199925"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#adf6b9071893e0398ae982ba128199925">Carcassonne::Environnement::getNbMeeples</a></div><div class="ttdeci">int getNbMeeples() const</div><div class="ttdoc">Renvoie le nombre de Tuiles regroupant ce même element d'environnement.</div><div class="ttdef"><b>Definition:</b> Environnement.h:48</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Tuile_html"><div class="ttname"><a href="classCarcassonne_1_1Tuile.html">Carcassonne::Tuile</a></div><div class="ttdoc">Represente une Tuile.</div><div class="ttdef"><b>Definition:</b> Tuile.h:122</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_acb397a0ab1d795594c70bb731501588b"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#acb397a0ab1d795594c70bb731501588b">Carcassonne::Environnement::getMeeple</a></div><div class="ttdeci">Meeple * getMeeple() const</div><div class="ttdoc">Recupere le meeple lie a un environnement.</div><div class="ttdef"><b>Definition:</b> Environnement.h:59</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a5c42e804d242028b96df62694a03249f"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a5c42e804d242028b96df62694a03249f">Carcassonne::Environnement::getNbTuiles</a></div><div class="ttdeci">int getNbTuiles() const</div><div class="ttdoc">Renvoie le nombre de Meeples presents sur cet environnement.</div><div class="ttdef"><b>Definition:</b> Environnement.h:43</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1TuileException_html"><div class="ttname"><a href="classCarcassonne_1_1TuileException.html">Carcassonne::TuileException</a></div><div class="ttdoc">Exceptions declenchees par les Tuiles.</div><div class="ttdef"><b>Definition:</b> CarcassonneException.h:79</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html">Carcassonne::Environnement</a></div><div class="ttdoc">Represente le concept general des elements pouvant se trouver sur une Tuile.</div><div class="ttdef"><b>Definition:</b> Environnement.h:25</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_af876c193306f807dfc493c01b8e40787"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#af876c193306f807dfc493c01b8e40787">Carcassonne::Environnement::sontSimilaires</a></div><div class="ttdeci">virtual bool sontSimilaires(const Environnement *env) const</div><div class="ttdoc">Inidique si deux environnements sont similaires.</div><div class="ttdef"><b>Definition:</b> Environnement.h:129</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html">Carcassonne::Meeple</a></div><div class="ttdoc">Represente un Meeple.</div><div class="ttdef"><b>Definition:</b> Personnages.h:22</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_ab396deeda533e0cade120a7a984dbf9b"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#ab396deeda533e0cade120a7a984dbf9b">Carcassonne::Environnement::poserMeeple</a></div><div class="ttdeci">virtual void poserMeeple(Meeple *m)</div><div class="ttdoc">Pose un meeple sur un environnement.</div><div class="ttdef"><b>Definition:</b> Environnement.h:78</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Meeple_html_a0bf7c775d581d588265363cbd1078a30"><div class="ttname"><a href="classCarcassonne_1_1Meeple.html#a0bf7c775d581d588265363cbd1078a30">Carcassonne::Meeple::misEnJeu</a></div><div class="ttdeci">void misEnJeu()</div><div class="ttdoc">Met le meeple sur le plateau.</div><div class="ttdef"><b>Definition:</b> Personnages.h:57</div></div>
+<div class="ttc" id="aCarcassonneException_8h_html"><div class="ttname"><a href="CarcassonneException_8h.html">CarcassonneException.h</a></div></div>
+<div class="ttc" id="aPersonnages_8h_html"><div class="ttname"><a href="Personnages_8h.html">Personnages.h</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a5fb757fcbbc482891215355fb1f6e959"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a5fb757fcbbc482891215355fb1f6e959">Carcassonne::Environnement::setOption</a></div><div class="ttdeci">virtual void setOption(int option)</div><div class="ttdoc">Permet de rajouter une variante d'un certain environnement par exemple.</div><div class="ttdef"><b>Definition:</b> Environnement.h:108</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a9cb6d43cb3f38e1fb49d63cf877b3147"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a9cb6d43cb3f38e1fb49d63cf877b3147">Carcassonne::Environnement::ajouterTuile</a></div><div class="ttdeci">virtual void ajouterTuile(const Tuile *tuile)</div><div class="ttdoc">Connecte une tuile a un environnement.</div><div class="ttdef"><b>Definition:</b> Environnement.h:71</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_aa52df20ac276703b7b9bc1fc4e0d028e"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#aa52df20ac276703b7b9bc1fc4e0d028e">Carcassonne::Environnement::getTuiles</a></div><div class="ttdeci">list&lt; const Tuile * &gt; getTuiles() const</div><div class="ttdoc">Renvoie la liste des Tuiles regroupant ce même element d'environnement.</div><div class="ttdef"><b>Definition:</b> Environnement.h:66</div></div>
+<div class="ttc" id="anamespaceCarcassonne_html"><div class="ttname"><a href="namespaceCarcassonne.html">Carcassonne</a></div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a65160a4be2286ed16d728cac80e8eb09"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a65160a4be2286ed16d728cac80e8eb09">Carcassonne::Environnement::meeple</a></div><div class="ttdeci">Meeple * meeple</div><div class="ttdef"><b>Definition:</b> Environnement.h:28</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a9d9ba9bb1ee3ca17a5ceb9d213b8c38f"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a9d9ba9bb1ee3ca17a5ceb9d213b8c38f">Carcassonne::Environnement::connect</a></div><div class="ttdeci">virtual Environnement * connect(Environnement *env)=0</div><div class="ttdoc">Connecte l'environnement courant a un autre.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_ab8d111c6261c71abcf48f234094aa208"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#ab8d111c6261c71abcf48f234094aa208">Carcassonne::Environnement::peutPoserMeeple</a></div><div class="ttdeci">virtual bool peutPoserMeeple() const</div><div class="ttdoc">Inidique si l'on peut poser un meeple.</div><div class="ttdef"><b>Definition:</b> Environnement.h:113</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a244f427ca69e749e2ed460d0ed052348"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a244f427ca69e749e2ed460d0ed052348">Carcassonne::Environnement::checkMeepleConstraint</a></div><div class="ttdeci">virtual bool checkMeepleConstraint(const Environnement *env) const</div><div class="ttdoc">Verifie des contraintes par rapport a un autre environnement.</div><div class="ttdef"><b>Definition:</b> Environnement.h:121</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_adbc650d846ef647c61a73229b165b80d"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#adbc650d846ef647c61a73229b165b80d">Carcassonne::Environnement::~Environnement</a></div><div class="ttdeci">virtual ~Environnement()=default</div><div class="ttdoc">Destructeur de la classe.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a1a41ffa5803d456135421d53c2459c62"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a1a41ffa5803d456135421d53c2459c62">Carcassonne::Environnement::listeTuiles</a></div><div class="ttdeci">list&lt; const Tuile * &gt; listeTuiles</div><div class="ttdef"><b>Definition:</b> Environnement.h:27</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_aa6caf70ba347f48f09d0df347d5355fe"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#aa6caf70ba347f48f09d0df347d5355fe">Carcassonne::Environnement::toChar</a></div><div class="ttdeci">virtual const char &amp; toChar() const =0</div><div class="ttdoc">Renvoie le caractere representant un type d'environnement.</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a40b42a6c3daf08da6c8f5f3b7a7e4f77"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a40b42a6c3daf08da6c8f5f3b7a7e4f77">Carcassonne::Environnement::retirerMeeple</a></div><div class="ttdeci">virtual Meeple * retirerMeeple()</div><div class="ttdoc">Retire un Meeple de cet environnement.</div><div class="ttdef"><b>Definition:</b> Environnement.h:88</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a3f32d7a1200e10f63cba02857b8d19aa"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a3f32d7a1200e10f63cba02857b8d19aa">Carcassonne::Environnement::peutEtreAdjacentA</a></div><div class="ttdeci">virtual bool peutEtreAdjacentA(const Environnement *envAdj)</div><div class="ttdoc">Indique si l'environnement courant peut etre adjacent a un autre.</div><div class="ttdef"><b>Definition:</b> Environnement.h:147</div></div>
+<div class="ttc" id="aclassCarcassonne_1_1Environnement_html_a83b912121b3c84302bc5c989caa2dc1a"><div class="ttname"><a href="classCarcassonne_1_1Environnement.html#a83b912121b3c84302bc5c989caa2dc1a">Carcassonne::Environnement::Environnement</a></div><div class="ttdeci">Environnement(const Tuile *premiereTuile)</div><div class="ttdoc">Constructeur de la classe.</div><div class="ttdef"><b>Definition:</b> Environnement.h:34</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="Carcassonne::PiocheException" name="Carcassonne::PiocheException">
+<area shape="rect" id="node1" title="Exceptions declenchees par la Pioche." alt="" coords="5,300,225,377"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1CarcassonneException.html" title="Regroupe toutes les exceptions du jeu." alt="" coords="13,131,218,252"/>
+<area shape="rect" id="node3" title=" " alt="" coords="72,5,159,83"/>
+</map>

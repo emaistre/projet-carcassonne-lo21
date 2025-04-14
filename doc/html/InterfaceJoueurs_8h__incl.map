@@ -1,0 +1,14 @@
+<map id="InterfaceJoueurs.h" name="InterfaceJoueurs.h">
+<area shape="rect" id="node1" title=" " alt="" coords="186,5,326,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,61,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="217,155,295,181"/>
+<area shape="rect" id="node4" href="$CarcassonneException_8h.html" title=" " alt="" coords="293,80,475,107"/>
+<area shape="rect" id="node7" href="$Joueurs_8h.html" title=" " alt="" coords="499,80,581,107"/>
+<area shape="rect" id="node10" href="$InterfaceJoueur_8h.html" title=" " alt="" coords="85,80,219,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="431,229,489,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="335,155,422,181"/>
+<area shape="rect" id="node8" href="$Joueur_8h.html" title=" " alt="" coords="503,155,577,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="514,229,577,256"/>
+<area shape="rect" id="node11" href="$InterfaceCouleurJoueur_8h.html" title=" " alt="" coords="10,155,193,181"/>
+<area shape="rect" id="node12" title=" " alt="" coords="48,229,155,256"/>
+</map>

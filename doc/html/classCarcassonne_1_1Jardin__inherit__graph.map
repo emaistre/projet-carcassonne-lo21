@@ -1,0 +1,5 @@
+<map id="Carcassonne::Jardin" name="Carcassonne::Jardin">
+<area shape="rect" id="node1" title="Represente un Jardin." alt="" coords="36,461,187,568"/>
+<area shape="rect" id="node2" href="$classCarcassonne_1_1Batiment.html" title="Represente le concept general de Batiment." alt="" coords="25,292,198,413"/>
+<area shape="rect" id="node3" href="$classCarcassonne_1_1Environnement.html" title="Represente le concept general des elements pouvant se trouver sur une Tuile." alt="" coords="5,5,217,244"/>
+</map>
